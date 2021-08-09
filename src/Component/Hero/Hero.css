@@ -1,11 +1,12 @@
-@import "~slick-carousel/slick/slick.css";
-@import "~slick-carousel/slick/slick-theme.css";
+/* @import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css"; */
 
 .intro-section{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(35, 106, 232, 0.4);
+    margin-bottom: 150px;
 }
 .social-links { 
     position: absolute;
@@ -231,32 +232,31 @@ video {
     margin: 10px;
     box-shadow: 0 0 20px rgba(85, 85, 85, 0.1);
 }
+.card-text{
+    padding: 0 30px;
+}
 .topic-card > img{
-    width: 450px;
+    width: 100%;
     height: auto;
     border-radius: 10px 10px 0 0;
 }
 .title{
-    width: 360px;
     font-size: 18px;
     font-weight: 700;
     padding-top: 30px;
 }
 .level{
-    width: 360px;
     font-size: 16px;
     font-weight: 400;
     padding-top: 15px;
 }
 .description{
-    width: 360px;
     font-size: 14px;
     font-weight: 400;
     color: #555555;
     padding-top: 15px;
 }
 .learn-more{
-    width: 360px;
     font-size: 16px;
     font-weight: 700;
     text-align: right;
@@ -282,7 +282,7 @@ video {
     width: 440px;
     margin-right: 10px;
 }
-.name{
+.email{
     border-style: none;
     padding-left: 14px;
     color: #444444;
@@ -345,4 +345,343 @@ video {
     border-radius: 50%;
     cursor: pointer;
     position: relative;
+}
+/* ############################ Responsive 1450 ############################ */
+@media only screen and (max-width: 1450px) {
+    .intro-section{
+        margin-bottom: 100px;
+    }
+    .card-section{
+        top: 700px;
+    }
+    .heading{
+        font-size: 70px;
+    }
+    .section-heading{
+        font-size: 40px;
+    }
+    .info-card{
+        margin: 0 40px;
+    }
+    .section-sub-heading {
+        font-size: 16px;
+        padding: 10px 0;
+        width: 400px;
+        margin: 30px 0 60px 0;
+    }
+    .section-img > img {
+        height: 400px;
+        width: auto;
+    }
+    .topic-card{
+        width: 350px;
+        margin: 10px;
+    }
+    .card-text{
+        padding: 0 30px;
+    }
+    .topic-list{
+        margin: 50px 0;
+    }
+    .topic-list > div{
+        padding: 0 20px;
+    }
+    .setup-section{
+        margin: 100px 0;
+    }
+    .setup-heading {
+        font-size: 40px;
+        width: 350px;
+        margin-right: 10px;
+    }
+    .email{
+        padding-left: 14px;
+        font-size: 18px;
+        padding: 25px 40px;
+        width: 400px;
+        margin-right: 60px;
+    }
+    .footer-left {
+        padding: 80px 30px 80px 150px;
+    }
+    .footer-right {
+        padding: 80px 150px 80px 150px;
+    }
+}
+
+/* ############################ Responsive 1330 ############################ */
+@media only screen and (max-width: 1330px) {
+    .intro-section{
+        margin-bottom: 80px;
+    }
+    .heading{
+        font-size: 70px;
+    }
+    .section-heading{
+        font-size: 40px;
+    }
+    .info-card{
+        margin: 0 40px;
+    }
+    .section-sub-heading {
+        font-size: 16px;
+        padding: 10px 0;
+        width: 400px;
+        margin: 30px 0 60px 0;
+    }
+    .section-img > img {
+        height: 400px;
+        width: auto;
+    }
+    .topic-card{
+        width: 350px;
+        margin: 10px;
+    }
+    .card-text{
+        padding: 0 30px;
+    }
+    .topic-list{
+        margin: 50px 0;
+    }
+    .topic-list > div{
+        padding: 0 20px;
+    }
+    .setup-section{
+        margin: 100px 0;
+    }
+    .setup-heading {
+        font-size: 40px;
+        width: 350px;
+        margin-right: 10px;
+    }
+    .email{
+        padding-left: 14px;
+        font-size: 18px;
+        padding: 25px 40px;
+        width: 400px;
+        margin-right: 60px;
+    }
+    .footer-left {
+        padding: 80px 30px 80px 150px;
+    }
+    .footer-right {
+        padding: 80px 150px 80px 150px;
+    }
+}
+
+/* ############################ Responsive 1250 ############################ */
+@media only screen and (max-width: 1250px) {
+    .intro-section{
+        margin-bottom: 250px;
+    }
+    .heading{
+        font-size: 70px;
+    }
+    .button {
+        padding: 20px 60px;
+    }
+    .email {
+        padding: 20px 40px;
+        margin-right: 60px;
+    }
+    .section{
+        padding-top: 20px;
+    }
+    .section-heading{
+        font-size: 40px;
+    }
+    .info-card{
+        margin: 0 40px;
+    }
+    .section-sub-heading {
+        font-size: 16px;
+        padding: 10px 0;
+        width: 400px;
+        margin: 30px 0 60px 0;
+    }
+    .section-img > img {
+        height: 400px;
+        width: auto;
+    }
+    .topic-card{
+        width: 350px;
+        margin: 10px;
+    }
+    .card-text{
+        padding: 0 30px;
+    }
+    .topic-list{
+        margin: 50px 0;
+    }
+    .topic-list > div{
+        padding: 0 20px;
+    }
+    .setup-section{
+        margin: 100px 0;
+    }
+    .setup-heading {
+        font-size: 40px;
+        width: 350px;
+        margin-right: 10px;
+    }
+    .footer-left {
+        padding: 80px 30px 80px 150px;
+    }
+    .footer-right {
+        padding: 80px 150px 80px 150px;
+    }
+}
+
+/* ############################ Responsive 1130 ############################ */
+@media only screen and (max-width: 1130px) {
+    .intro-section{
+        margin-bottom: 250px;
+    }
+    .heading{
+        font-size: 70px;
+    }
+    .button {
+        padding: 20px 60px;
+    }
+    .email {
+        padding: 20px 40px;
+        margin-right: 20px;
+    }
+    .section{
+        padding-top: 20px;
+    }
+    .section-heading{
+        font-size: 40px;
+    }
+    .info-card{
+        margin: 0 20px;
+        padding: 80px 30px;
+    }
+    .learn-more{
+        padding-bottom: 20px;
+        padding-top: 40px;
+    }
+    .section-sub-heading {
+        font-size: 16px;
+        padding: 10px 0;
+        width: 400px;
+        margin: 30px 0 60px 0;
+    }
+    .section-img > img {
+        height: 400px;
+        width: auto;
+    }
+    .map {
+        padding: 50px 0 0 0;
+        height: 550px;
+        width: auto;
+    }
+    .topic-card{
+        width: 325px;
+        margin: 10px;
+    }
+    .card-text{
+        padding: 0 30px;
+    }
+    .topic-list{
+        margin: 50px 0;
+    }
+    .topic-list > div{
+        padding: 0 20px;
+    }
+    .setup-section{
+        margin: 100px 0;
+    }
+    .setup-heading {
+        font-size: 35px;
+        width: 300px;
+        margin-right: 10px;
+    }
+    .footer-left {
+        padding: 80px 30px 80px 150px;
+    }
+    .footer-right {
+        padding: 80px 150px 80px 150px;
+    }
+}
+
+/* ############################ Responsive 1024 ############################ */
+@media only screen and (max-width: 1024px) {
+    .intro-section{
+        margin-bottom: 250px;
+    }
+    .heading{
+        font-size: 70px;
+    }
+    .button {
+        padding: 20px 60px;
+    }
+    .email {
+        padding: 20px 40px;
+        margin-right: 20px;
+    }
+    .section{
+        padding-top: 20px;
+    }
+    .section-heading{
+        font-size: 40px;
+    }
+    .info-card{
+        margin: 0 20px;
+        padding: 80px 30px;
+    }
+    .learn-more{
+        padding-bottom: 20px;
+        padding-top: 40px;
+    }
+    .section-sub-heading {
+        font-size: 16px;
+        padding: 10px 0;
+        width: 400px;
+        margin: 30px 0 60px 0;
+    }
+    .section-img > img {
+        height: 400px;
+        width: auto;
+    }
+    .map {
+        padding: 50px 0 0 0;
+        height: 550px;
+        width: auto;
+    }
+    .topic-card{
+        width: 300px;
+        margin: 10px;
+    }
+    .card-text{
+        padding: 0 30px;
+    }
+    .topic-list{
+        margin: 50px 0;
+    }
+    .topic-list > div{
+        padding: 0 10px;
+    }
+    .setup-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 100px 0;
+    }
+    .setup-section > div, .setup-section>input, .setup-section>.button {
+        margin-top: 30px;
+    }
+    .setup-heading {
+        font-size: 35px;
+        width: 600px;
+        margin-right: 10px;
+        text-align: center;
+    }
+    .footer-left {
+        padding: 80px 20px 80px 110px;
+    }
+    .footer-right {
+        padding: 80px 110px 80px 110px;
+    }
 }
