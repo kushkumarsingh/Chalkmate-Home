@@ -2,3 +2,273 @@
     font-family: 'Montserrat', sans-serif;
     --primary: #297CED;
 }
+
+h1,h2,h3,h4,h5,h6{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+}
+.fontr{
+  font-family: 'Varela Round', sans-serif;
+}
+.fixed{
+  position: fixed;
+}
+.button{
+  outline: none;
+  cursor: pointer;
+}
+.noul{
+  text-decoration: none;
+}
+.s13{font-size: 13px;}
+.s14{font-size: 14px;}
+.s18{font-size: 18px;}
+.s24{font-size: 24px;}
+.s40{font-size: 40px;}
+.s15{font-size: 15px;}
+
+.cfff{color: #ffffff;}
+.c333{color: #333;}
+.c777{color: #777;}
+.b000{color: #000;}
+
+.flex{display: flex;}
+.aic{align-items: center;}
+.abs{position: absolute;}
+.rel{position: relative;}
+
+.fsfb{
+  font-size: 40px;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+.mb30{
+  margin-bottom: 30px;
+}
+.abc{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.abcb:before{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.n{font-weight: normal;}
+.anim{
+  transition: all 0.2s linear 0s;
+}
+.header{
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background: #ffffff;
+  z-index: 9;
+  padding: 30px;
+  height: 65px;
+  box-sizing: border-box;
+
+}
+.header .nav{
+  flex: 1;
+}
+.header .user{
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+}
+.header .you div{
+  width: 45px;
+  height: 45px;
+  background: #0066ff;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.hclr{
+ height: 85px;
+}
+
+/*HOMEPAGE*/
+.home{
+  /* padding: 100px 0px 100px 100px; */
+  position: absolute;
+  width: 100%;
+    top: 0px;
+}
+.home .meta{
+    width: 50%;
+    float: left;
+    margin-left: 9%;
+    margin-right: 5%;
+}
+.home .meta .slogan{}
+.home .meta .tagline{
+  margin: 15px 0px 40px 0px;
+}
+.home .meta .actions{}
+.home .meta .actions button{
+  border: 0px;
+  padding: 25px 25px;
+  border-radius: 27px;
+  background: #0066ff;
+  margin-right: 10px;
+  height: 40px;
+}
+.home .meta .actions button div{
+  margin: 0px 8px 0px 0px;
+}
+.famr{
+  margin-right: 8px;
+}
+.home .meta .actions button:hover{}
+.home .meta .actions input{
+  border: 1px #9a9a9a solid;
+  padding: 15px 30px 15px 15px;
+  border-radius: 27px;
+  margin-right: 10px;
+  height: 20px;
+  outline: none;
+}
+
+.home .meta .actions input:focus {
+  border: 2px solid blue;
+}
+
+.home img{
+    width: 40%;
+    float: right;
+    height: 100vh;
+    z-index: -2;
+}
+.home .tablet-frame{
+  flex: 1;
+  margin-left: 75px;
+}
+.home .tablet-frame .tablet{
+  width: 700px;
+  height: 460px;
+  background: #fff;
+  border-radius:  35px;
+  box-shadow: 0px 0px 0px 15px #dadada;
+}
+
+.home .tablet-frame .tablet .notch{
+  width: 20px;
+  height: 20px;
+  background: #ccc;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+}
+
+.home .tablet-frame .tablet .hbtn{
+  width: 40px;
+  height: 40px;
+  background: #ccc;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+}
+
+.home .tablet-frame .tablet .screen{
+  border: 2px #dadada solid;
+  top: 20px;
+  right: 55px;
+  bottom: 20px;
+  left: 80px;
+}
+
+.home .tablet-frame .tablet .screen img{
+    height: 100%;
+    width: 100%;
+}
+
+/*MEETING PAGE*/
+.meeting{
+  width: 960px;
+  margin: 0 auto;
+}
+.meeting .screen{
+  width: 675px;
+  height: 400px;
+  background: #000;
+  margin-right: 50px;
+  border-radius: 10px;
+}
+.meeting .screen .btns{
+  bottom: 10px;
+  left: 50%;
+  transform:  translateX(-50%);
+}
+.meeting .screen .btns button{
+  width: 50px;
+  height: 50px;
+  border: 0px;
+  margin: 0px 5px;
+  border-radius: 50%;
+  background: #0066ff;
+}
+.meeting .screen .btns button:hover{
+  background: #2a7fff;
+}
+.meeting .screen .btns button .tip{
+  opacity: 0;
+  user-select: none;
+  background: #444;
+  white-space: nowrap;
+  padding: 6px 10px;
+  border-radius: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -40px;
+  pointer-events: none;
+}
+.meeting .screen .btns button .tip:before{
+  content: '';
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border: 8px rgb(68 68 68 / 0%) solid;
+  border-top: 8px #444 solid;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.meeting .screen .btns button:hover .tip{
+  opacity: 1;
+  top: -35px;
+}
+.meeting .stats{
+  margin-top: 10px;
+  white-space: nowrap;
+}
+.meeting .stats{
+  flex: 1;
+
+}
+.meeting .stats .btns{
+  margin-top: 30px;
+} 
+.meeting .stats .btns button{
+  border: 2px solid #236AE8;
+    padding: 15px 30px;
+    border-radius: 27px;
+    background: #ffffff;
+    margin-right: 10px;
+    height: 50px;
+    color: #0066ff;
+} 
+.meeting .stats .btns button:hover{
+  background-color: #236AE8;
+  color: white;
+} 
+

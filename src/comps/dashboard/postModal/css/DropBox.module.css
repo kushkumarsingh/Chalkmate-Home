@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    padding: 12px 20px 8px 20px;
+    border: 1px solid #9e9e9e;
+    border-radius: 50px;
+    min-width: 125px;
+    cursor: pointer;
+}
+
+.container:hover{
+    color: #6a96ec;
+    /* border: 1px solid #6a96ec; */
+}
+
+.container:hover>.light{
+    color: #6a96ec;
+}
+
+.light{
+    color: #757575;
+}
+
+.eye{
+    height: 20px;
+    width: 17px;
+    margin-right: 5px;
+}
+
+.dropArrow{
+    height: 22px;
+    position: relative;
+    top: -2px;
+    margin-left: auto;
+    order: 2;
+}

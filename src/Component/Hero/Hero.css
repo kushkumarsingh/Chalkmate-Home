@@ -337,3 +337,12 @@ video {
     height: 500px;
     width: auto;
 }
+
+.corousel-arrow-home {
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}

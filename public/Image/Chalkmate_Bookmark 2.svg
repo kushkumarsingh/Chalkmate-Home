@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="28" viewBox="0 0 28 28">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="portfolio_copy" data-name="portfolio copy" width="28" height="28" transform="translate(11.406 9.944)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_60" data-name="Mask Group 60" transform="translate(-11.406 -9.944)" clip-path="url(#clip-path)">
+    <g id="Chalkmate_MyBookmark" transform="translate(31.13 19.447)">
+      <g id="Group_1366" data-name="Group 1366" transform="translate(-17.385 -8.501)">
+        <path id="Path_407" data-name="Path 407" d="M22.635.874a1.986,1.986,0,0,0-.917-.716A1.951,1.951,0,0,0,20.95,0H2.688a1.951,1.951,0,0,0-.768.16A1.986,1.986,0,0,0,1,.874a1.847,1.847,0,0,0-.34,1.082V24.424A1.884,1.884,0,0,0,1,25.506a1.986,1.986,0,0,0,.917.716,1.951,1.951,0,0,0,.768.16,2.1,2.1,0,0,0,1.448-.572l7.688-7.395,7.688,7.395a2.081,2.081,0,0,0,1.448.557,2.032,2.032,0,0,0,1.685-.855,1.847,1.847,0,0,0,.34-1.082V1.962A1.9,1.9,0,0,0,22.635.874ZM20.368,23.125l-7.06-6.781-1.484-1.422L10.34,16.339,3.275,23.125V2.384H20.368V23.125Z" transform="translate(0 0)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

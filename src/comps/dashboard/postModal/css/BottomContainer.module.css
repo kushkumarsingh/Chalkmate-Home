@@ -1,0 +1,72 @@
+.container{
+    padding: 10px 0px;
+    gap: 30px;
+    display: flex;
+    flex-wrap:wrap;
+    padding-left: 5px;
+    align-items: center;
+    text-align: justify;
+}
+
+.photo{
+    /* transition: all .3s; */
+    height: 29px;
+    cursor: pointer;
+}
+
+.rightInner{
+    display: flex;
+    gap: 20px;
+    order: 2;
+    margin-left: auto;
+}
+
+.innerBox{
+    gap: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.photo:hover{
+    filter: invert(39%) sepia(71%) saturate(5058%) hue-rotate(213deg) brightness(95%) contrast(93%);
+}
+
+.post{
+    display: flex;
+    padding: 12px 30px 8px 30px;
+    border: 1px solid #6a96ec;
+    color: #6a96ec;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.post:hover{
+    background-color: #6a96ec;
+    color: #fff;
+}
+
+.fileUpload {
+    opacity: 0.0;
+ 
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+ 
+    /* IE 5-7 */
+    filter: alpha(opacity=0);
+  
+    /* Netscape or and older firefox browsers */
+    -moz-opacity: 0.0;
+ 
+    /* older Safari browsers */
+    -khtml-opacity: 0.0;
+ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height:100%;
+ }

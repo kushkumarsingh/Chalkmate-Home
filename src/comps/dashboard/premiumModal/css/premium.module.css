@@ -1,0 +1,64 @@
+.comingSoon{
+    text-align: center;
+    font: normal normal bold 42px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 102px 71px;
+    background: #236AE8;
+    border-radius: 10px 10px 0px 0px;
+    z-index: 20;
+}
+
+.bottomContainer{
+    padding: 20px 75px 41px 75px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.outerContainer{
+    background: #FFFFFF;
+    border-radius: 10px;
+    max-width: 520px;
+    position: relative;
+}
+
+.diamond{
+    height: 40px;
+    width: 42px;
+}
+
+.title{
+    text-align: center;
+    font: normal normal normal 24px/29px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    text-transform: capitalize;
+}
+
+.desc{
+    text-align: center;
+    font: normal normal normal 16px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #555555;
+    padding: 10px;
+}
+
+.close{
+    width: 33px;
+    height: 33px;
+    background: #000000 0% 0% no-repeat padding-box;
+    opacity: 0.5;
+    border-radius: 100%;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color:#FFFFFF;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}

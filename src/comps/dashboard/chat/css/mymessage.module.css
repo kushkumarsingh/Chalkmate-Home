@@ -1,0 +1,17 @@
+.container{
+    background-color: #29daed;
+    color: #102d31;
+    margin-left: auto;
+    padding: 12px;
+    border-radius: 17px;
+    max-width:80%;
+    display: inline-block;
+    word-wrap: break-word;
+    margin-bottom: 7px;
+}
+
+.outerContainer{
+    order: 2;
+    display: flex;
+    width: 100%;
+}

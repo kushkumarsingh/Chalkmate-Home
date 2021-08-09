@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './Nav.css';
+import {Link} from 'react-router-dom'
 
 function Nav() {
  
@@ -22,7 +23,7 @@ function Nav() {
         <div className={!navbar ? 'menu' : 'menu-active'}>
           <div>Who are we</div>
           <div>Getting Started</div>
-          <div className={!navbar ? 'signin' : 'signin-active'}>Signin</div>
+          <div className={!navbar ? 'signin' : 'signin-active'} style={{cursor: 'pointer'}}> <Link to="/user">Signin</Link></div>
           <div>Join</div>
         </div>
       </div>

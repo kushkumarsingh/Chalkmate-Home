@@ -1,0 +1,18 @@
+.container{
+    background-color: #fff;
+    display: inline-block;
+    color: #5e5e5e;
+    padding: 12px;
+    border-radius: 17px;
+    max-width:80%;
+    flex-shrink: 1;
+    margin-bottom: 7px;
+    word-wrap: break-word;
+    -webkit-box-shadow: 0px 2px 4px 0px #dadada; 
+    box-shadow: 0px 2px 4px 0px #dadada;
+    margin-left: 5px;
+}
+
+.outer{
+    width: 100%;
+}

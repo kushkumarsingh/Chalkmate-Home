@@ -1,0 +1,61 @@
+.classModal {
+    text-align: left;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    height: 460px;
+    padding-top: 5px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  
+.inputField {
+     border-radius: 25px;
+     width: 550px;
+     margin-left: 15px;
+     height: 40px;
+     outline: none;
+     border: 1px #c2c2c2 solid;
+     padding-left: 20px;
+  }
+
+.inputField1 {
+    border-radius: 25px;
+    width: 550px;
+    margin-left: 15px;
+    height: 105px;
+    outline: none;
+    border: 1px #c2c2c2 solid;
+    padding-left: 20px;
+ }  
+
+
+input.inputField1::placeholder {
+    top: 10px;
+    position: absolute;
+}
+.inputLabel {
+    font-size: 13px;
+    margin-bottom: 10px;
+    padding-left: 1rem;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-weight: normal;
+  }  
+  
+.saveDetailsButton {
+    border: 1px #236ae8 solid;
+    background-color: white;
+    border-radius: 2rem;
+    width: 170px;
+    height: 40px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #236ae8;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  
+.saveDetailsButton:hover {
+    background-color: #236ae8;
+    color: white;
+    /* border: 1px #236ae8 solid; */
+}
