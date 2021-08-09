@@ -77,3 +77,9 @@
     color: white;
     transition: 0.2s ease-in-out;
 }
+/* ############################ Responsive 1024 ############################ */
+@media only screen and (max-width: 1024px) {
+    .header, .header-active{
+        display: none;
+    }
+}

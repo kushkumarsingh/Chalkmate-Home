@@ -208,26 +208,32 @@ function Hero(){
                 <div className='card-container'>
                     <div className="topic-card">
                         <img src="Assets/topic1.png" alt="" />
-                        <div className='title'>Introduction to Quantum Theory & Astrophysics</div>
-                        <div className='level'>Advance</div>
-                        <div className='description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</div>
-                        <div className='learn-more'>Learn More</div>
+                        <div className='card-text'>
+                            <div className='title'>Introduction to Quantum Theory & Astrophysics</div>
+                            <div className='level'>Advance</div>
+                            <div className='description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</div>
+                            <div className='learn-more'>Learn More</div>
+                        </div>
                     </div>
 
                     <div className="topic-card">
                         <img src="Assets/topic2.png" alt="" />
-                        <div className='title'>Introduction to Quantum Theory & Astrophysics</div>
-                        <div className='level'>Advance</div>
-                        <div className='description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</div>
-                        <div className='learn-more'>Learn More</div>
+                        <div className='card-text'>
+                            <div className='title'>Introduction to Quantum Theory & Astrophysics</div>
+                            <div className='level'>Advance</div>
+                            <div className='description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</div>
+                            <div className='learn-more'>Learn More</div>
+                        </div>
                     </div>
 
                     <div className="topic-card">
                         <img src="Assets/topic3.png" alt="" />
-                        <div className='title'>Introduction to Quantum Theory & Astrophysics</div>
-                        <div className='level'>Advance</div>
-                        <div className='description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</div>
-                        <div className='learn-more'>Learn More</div>
+                        <div className='card-text'>
+                            <div className='title'>Introduction to Quantum Theory & Astrophysics</div>
+                            <div className='level'>Advance</div>
+                            <div className='description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</div>
+                            <div className='learn-more'>Learn More</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -238,7 +244,7 @@ function Hero(){
                 an account
                 and start learning.
             </div>
-            <input className='name' type="email" placeholder="Your email here..." />
+            <input className='email' type="email" placeholder="Your email here..." />
             <button className='button'>Set me up</button>
         </div>
 
