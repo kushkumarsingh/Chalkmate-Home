@@ -1,0 +1,35 @@
+@media print {
+    /* #tidctop {
+        display: 'flex' !important;
+    }
+
+    #tidcinnerfirst {
+        align-self: 'center' !important;
+        margin-right: 15 !important
+    }
+
+    #tidcinsideinnerfirst {
+        padding: 8px 8px 8px 8px !important; 
+        background-color: '#236AE8' !important;
+        border-radius: 8px !important;
+        align-items: 'center' !important;
+        display: 'flex' !important
+    }
+
+    #tidcimg {
+        height: 20px !important;
+    }
+
+    #tidcinnersecond {
+        align-self: 'center' !important;
+        line-height: 0.5px !important
+    }
+
+    #tidcdesc {
+        color: 'red' !important; 
+        font-size: 20px !important
+    } */
+    * {
+        background-color: red;
+    }
+}

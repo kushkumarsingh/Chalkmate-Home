@@ -1,0 +1,72 @@
+.container{
+    padding-bottom: 2px;
+    cursor: pointer;
+    background: #eee;
+    /* background: -moz-linear-gradient(left, #FFFFFF 0%, #8f8e8e 20%, #FFFFFF 100%);
+    background: -webkit-linear-gradient(left, #FFFFFF 0%, #8f8e8e 20%, #FFFFFF 100%);
+    background: linear-gradient(to right, #FFFFFF 0%, #8f8e8e 20%, #FFFFFF 100%); */
+}
+
+.innerContainer{
+    padding: 10px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    background-color: #fff;
+    border-left: 3.5px solid transparent;
+}
+
+.innerContainer:hover{
+    /* background-color: #29daed; */
+    background-color: #f5f7f6;
+    border-left: 3.5px solid #29daed;
+}
+
+.innerContainerClicked{
+    padding: 10px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    background-color: #29daed;
+}
+
+.profilePic{
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.status{
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    height: 8px;
+    width: 8px;
+    border-radius:100%;
+    background-color: #2ddf20;
+    z-index: 5;
+}
+
+.profilePicContainer{
+    position: relative;
+}
+
+.nameContainer{
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    overflow: hidden; 
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+
+.name{
+    font-weight: 500;
+}
+
+.lastMessage{
+    text-align: left;
+    font-weight: 300;
+}

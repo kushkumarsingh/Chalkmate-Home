@@ -1,0 +1,16 @@
+.container {
+    position: fixed;
+    bottom: 0;
+    right: 30px;
+    display: flex;
+    gap: 15px;
+    opacity: 1;
+    z-index: 11;
+    pointer-events: none;
+}
+
+@media (max-width: 1139px) {
+    .container {
+        display: none;
+    }
+}

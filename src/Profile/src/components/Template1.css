@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
+/* * {
+    max-width: 100%;
+    height: 100%;
+} */
+
+/* #topviewable {
+    content: "";
+    background: url(./watermark/Chalkmate_Watermark.svg);
+    opacity: 0.6;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+} */
+
+#topviewable, #main {
+    font-family: 'Montserrat', sans-serif
+}
+
+#vw-profmail {
+    font-family: 'Montserrat', sans-serif
+}
+
+#vw-prsc {
+    flex-direction: 'row';
+}
+
+#btn-ftr {
+    color: #297CED;
+}
+
+#btn-ftr:hover {
+    background-color: #297CED;
+    transition: background-color 150ms linear;
+    cursor: pointer;
+}
+
+#btn-ftr:hover p {
+    color: #fff;
+    z-index: 100;
+}

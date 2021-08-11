@@ -1,0 +1,112 @@
+.outerContainer{
+    max-width: 300px;
+    width: 100%;
+    min-width: 300px;
+    margin-top: auto;
+    pointer-events: all;
+}
+
+@media screen  and (max-width:410px){
+    .outerContainer{
+        right: 0;
+        max-width: 100%;
+    }
+}
+
+.innerContainer{
+    pointer-events: all;
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    border-radius: 7px 7px 0 0;
+    display: flex;
+    /* box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.15); */
+    box-shadow: 0px 3px 20px #5555551A;
+    align-items: center;
+    font: small;
+    gap: 7px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    /* min-width: 300px; */
+}
+
+.status{
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    height: 8px;
+    width: 8px;
+    border-radius:100%;
+    background-color: #2ddf20;
+    z-index: 5;
+}
+
+.profilePicContainer{
+    position: relative;
+}
+
+.arrowUp{
+    position: relative;
+    top:2px;
+    height: 20px;
+    border-radius: 100%;
+    transition: all 0.2s;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.arrowDown{
+    position: relative;
+    top:2px;
+    height: 20px;
+    border-radius: 100%;
+    transition: all 0.2s;
+    padding: 4px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+
+.arrowDown:hover{
+    background-color: rgba(238, 238, 238, 0.3);
+}
+
+.arrowUp:hover{
+    background-color: rgba(238, 238, 238, 0.3);
+}
+
+.rightContainer{
+    order: 2;
+    margin-left: auto;
+    display: flex;
+}
+
+.profilePic{
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.phone{
+    position: relative;
+    top:2px;
+    height: 20px;
+    border-radius: 100%;
+    transition: all 0.2s;
+    padding: 4px;
+    cursor: pointer;
+    filter: invert(75%) sepia(21%) saturate(0%) hue-rotate(231deg) brightness(94%) contrast(86%);
+}
+
+.video{
+    position: relative;
+    top:2px;
+    height: 20px;
+    border-radius: 100%;
+    transition: all 0.2s;
+    padding: 4px;
+    cursor: pointer;
+    filter: invert(78%) sepia(68%) saturate(1308%) hue-rotate(139deg) brightness(91%) contrast(93%);
+}

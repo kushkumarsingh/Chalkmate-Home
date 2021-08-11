@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29" height="29" viewBox="0 0 29 29">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_290" data-name="Rectangle 290" width="23" height="23" transform="translate(552.731 29.84)" fill="#b4b4b4" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Group_2043" data-name="Group 2043" transform="translate(-549.731 -26.84)">
+    <g id="Rectangle_291" data-name="Rectangle 291" transform="translate(549.731 26.84)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0">
+      <rect width="29" height="29" stroke="none"/>
+      <rect x="0.5" y="0.5" width="28" height="28" fill="none"/>
+    </g>
+    <g id="Mask_Group_111" data-name="Mask Group 111" clip-path="url(#clip-path)">
+      <g id="Icons" transform="translate(559.439 33.673)">
+        <g id="Outlined" transform="translate(-591.292 -235.75)">
+          <g id="Action" transform="translate(95.833 95.833)">
+            <g id="Outlined-_-Action-_-drag_indicator" data-name="Outlined-/-Action-/-drag_indicator" transform="translate(488.75 136.083)">
+              <g id="Group_2036" data-name="Group 2036">
+                <path id="Path" d="M0,0H23V23H0Z" fill="none" fill-rule="evenodd"/>
+                <path id="_-Icon-Color" data-name="🔹-Icon-Color" d="M10.542,17.25a1.917,1.917,0,1,1-1.917-1.917A1.922,1.922,0,0,1,10.542,17.25ZM8.625,9.583A1.917,1.917,0,1,0,10.542,11.5,1.922,1.922,0,0,0,8.625,9.583Zm0-5.75A1.917,1.917,0,1,0,10.542,5.75,1.922,1.922,0,0,0,8.625,3.833Zm5.75,3.833A1.917,1.917,0,1,0,12.458,5.75,1.922,1.922,0,0,0,14.375,7.667Zm0,1.917A1.917,1.917,0,1,0,16.292,11.5,1.922,1.922,0,0,0,14.375,9.583Zm0,5.75a1.917,1.917,0,1,0,1.917,1.917A1.922,1.922,0,0,0,14.375,15.333Z" fill="#b4b4b4" fill-rule="evenodd"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
