@@ -1,4 +1,4 @@
-.header{
+.nav{
     display: flex;
     flex-direction: row;
     position: fixed;
@@ -12,7 +12,7 @@
     padding: 10px 260px;
     transition: 0.2s ease-in-out;
 }
-.header-active{
+.nav-active{
     display: flex;
     flex-direction: row;
     position: fixed;
@@ -38,7 +38,7 @@
     width: auto;
     padding-right: 50px;
 }
-.menu{
+.navlink{
     color: white;
     display: flex;
     flex-direction: row;
@@ -47,10 +47,10 @@
     font-weight: 400;
     transition: 0.2s ease-in-out;
 }
-.menu > div {
+.navlink > div {
     margin-left: 50px;
 }
-.menu-active{
+.navlink-active{
     color: #9c9c9c;
     display: flex;
     flex-direction: row;
@@ -59,7 +59,7 @@
     font-weight: 400;
     transition: 0.2s ease-in-out;
 }
-.menu-active > div {
+.navlink-active > div {
     margin-left: 50px;
     transition: 0.2s ease-in-out;
 }
@@ -77,9 +77,83 @@
     color: white;
     transition: 0.2s ease-in-out;
 }
-/* ############################ Responsive 1024 ############################ */
-@media only screen and (max-width: 1024px) {
-    .header, .header-active{
-        display: none;
+.signin > a {
+    text-decoration: none;
+    color: var(--primary);
+}
+.signin-active > a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* ----------------------------Mobile nav----------------------- */
+
+.nav-mobile{
+    position: fixed;
+    z-index: 1;
+    display: none;
+}
+.nav-icon{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(85, 85, 85, 0.1);
+    padding: 15px 0;
+}
+.menu_icon{
+    width: 30px;
+    height: auto;
+}
+.nav-icon :nth-child(1){
+    margin-left: 40px;
+    width: 150px;
+    height: auto;
+}
+.nav-icon :nth-child(2){
+    margin-right: 40px;
+    width: 50px;
+    height: auto;
+}
+
+.side-nav {
+    position: absolute;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(85, 85, 85, 0.16);
+    transition: right 0.3s ease-in-out;
+    padding-top: 30px;
+}
+.side-nav-active{
+    right: 0 !important;
+    transition: right 0.3s ease-in-out;
+}
+.side-nav-links > div{
+    padding: 20px 0;
+    font-size: 16px;
+    font-weight: 500;
+} 
+
+/* ############################ Responsive 1350 ############################ */
+@media only screen and (max-width: 1350px) {
+    .nav, .nav-active{
+        padding: 10px 120px;
     }
 }
+/* ############################ Responsive 1024 ############################ */
+@media only screen and (max-width: 1024px) {
+    .nav, .nav-active{
+        display: none;
+    }
+    .nav-mobile{
+        display: block;
+    }
+}
+
