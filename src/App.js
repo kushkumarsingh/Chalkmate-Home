@@ -58,7 +58,9 @@ export default class App extends React.Component {
 
   Profile() {
     return (
-      <div>
+      <div
+        className={styles.mains}
+      >
         <div
           class={styles.header_feed}
         >
@@ -132,7 +134,7 @@ export default class App extends React.Component {
           </Route>
         </Switch>
 
-        <Route path="/templates/choose" children={<ChooseTemplates />} />
+        <Route path="/templates/choose" children={<ChooseTemplates editpage={this.state.editpage} />} />
 
       </Router>
     );

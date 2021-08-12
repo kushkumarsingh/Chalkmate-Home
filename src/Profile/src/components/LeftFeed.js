@@ -56,7 +56,7 @@ export default class LeftFeed extends React.Component {
                 <br />
                 <br />
 
-                <div id="Featured" style={{ scrollMarginTop: 120 }}>
+                <div id="Featured" class={styles.Featured} style={{ scrollMarginTop: 120 }}>
 
                     <FeaturedFeed editpage={this.props.editpage}/>
                 </div>

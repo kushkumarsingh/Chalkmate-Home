@@ -22,10 +22,6 @@ export default class Feed extends React.Component {
         document.getElementById('hamburger-view').style.display = edit
     }
 
-    // getUpdatedDp () {
-    //     return this.state.dpfileloc
-    // }
-
     updateDp (fileloc) {
         this.setState({dpfileloc: fileloc})
     }
@@ -75,6 +71,7 @@ export default class Feed extends React.Component {
                         </div>
                         <div
                             id="hamburger-view"
+                            className={styles.hamburger_view}
                             // className={styles.right_feed}
                             style={{
                                 position: 'absolute'

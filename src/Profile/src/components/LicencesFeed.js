@@ -120,7 +120,7 @@ export default class LicencesFeed extends React.Component {
                                     Add licenses & certifications.
                                 </p>
                                 <button
-                                    className='btn'
+                                    className={styles.btn}
                                     style={{
                                         border: '2px solid #6798ef',
                                         padding: '12px 20px',

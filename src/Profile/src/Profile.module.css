@@ -293,13 +293,13 @@ input:focus, .textarea:focus, textarea:focus {
 
 .dropdown_menu {
   width: 204px;
-  height: 245px;
-  background: #FFFFFF 0% 0% no_repeat padding-box;
+  height: 235px;
   box-shadow: 3px 2px 4px 2px #55555529;
   border-radius: 5px;
   opacity: 1;
   margin-top: 20px;
-  margin-left: _130px;
+  margin-left: -130px;
+  background-color: #fff;
 }
 
 .dropdown_menu ul {
@@ -465,7 +465,7 @@ input:focus, .textarea:focus, textarea:focus {
 
 /* MAINS */
 
-body {
+.mains {
   display: flex;
   justify-content: center;
 }
@@ -520,7 +520,7 @@ textarea, .textarea {
   padding: 30px 20px 0px 20px
 }
 
-#hamburger_view {
+.hamburger_view {
   display: none;
 }
 
@@ -612,7 +612,7 @@ textarea, .textarea {
 }
 
 @media (max-width: 670px) {
-  .feed, #Featured {
+  .feed, .Featured {
     width: 30em;
   }
 }
@@ -624,7 +624,7 @@ textarea, .textarea {
 }
 
 @media (max-width: 500px) {
-  .feed, #Featured {
+  .feed, .Featured {
     width: 25em;
   }
 }
@@ -652,7 +652,7 @@ textarea, .textarea {
 }
 
 @media (max-width: 426px) {
-  .feed, #Featured {
+  .feed, .Featured {
     width: 22em;
   }
   .header_search {
@@ -661,7 +661,7 @@ textarea, .textarea {
 }
 
 @media (max-width: 360px) {
-  .feed, #Featured {
+  .feed, .Featured {
     width: 20em;
   }
   .header_search {
@@ -670,7 +670,7 @@ textarea, .textarea {
 }
 
 @media (max-width: 354px) {
-  .feed, #Featured {
+  .feed, .Featured {
     width: 18em;
   }
 }

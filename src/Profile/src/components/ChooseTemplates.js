@@ -27,9 +27,9 @@ export default class ChooseTemplates extends React.Component {
 
 
 
-
     render() {
 
+        console.log(this.props)
 
         return (
 
@@ -80,7 +80,7 @@ export default class ChooseTemplates extends React.Component {
                                     <CloseIcon />
                                 </Link>
                                 :
-                                <Link to="/" onClick={() => document.body.style.overflow = 'visible'}>
+                                <Link to={this.props.editpage ? '/edit' : '/view'} onClick={() => document.body.style.overflow = 'visible'}>
                                     <CloseIcon />
                                 </Link>
 

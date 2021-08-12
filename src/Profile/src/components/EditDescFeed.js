@@ -91,7 +91,9 @@ export default class EditDescFeed extends React.Component {
                     <div
                         style={{ position: 'relative' }}
                     >
-                        <Link to="/templates/choose" ><p style={{ fontWeight: 600, fontSize: 14, margin: 0, color: '#236AE8' }}
+                        <Link to={{pathname:"/templates/choose", aboutProps: {
+                            prevRoute: this.props.editpage ? '/edit' : '/view'
+                        }}}><p style={{ fontWeight: 600, fontSize: 14, margin: 0, color: '#236AE8' }}
                             onClick={() => {
                                 document.body.style.overflow = 'hidden'
                             }}

@@ -25,7 +25,7 @@ class Header extends Component {
             </div></li>
           <hr className={styles.Hr2} />
           <div className={styles.menu}>
-            <Link to={this.props.editpage ? "/" : "/edit"} style={{textDecoration: 'none'}}>
+            <Link to={this.props.editpage ? "/view" : "/edit"} style={{textDecoration: 'none'}}>
               <li style={{ marginTop: 6, marginBottom: 6, color: "#555555", cursor: 'pointer'}}
                 onClick={() => {
                   this.props.editpage ? this.props.setEditPageState(false) : this.props.setEditPageState(true)
