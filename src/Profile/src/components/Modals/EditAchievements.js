@@ -26,14 +26,14 @@ export default class EditAchievements extends React.Component {
                 }}
             >
 
-                <div id="header"
+                <div id={styles.header}
                     style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid #5555555A', paddingBottom: 20, marginBottom: 20 }}
                 >
                     <div
                         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
                     >
                         <img src="./assets/add.svg" height={30} />
-                        <p style={{ margin: 0, fontWeight: 600, marginLeft: 10 }}>{this.props.title}</p>
+                        <p className={styles.modal_title}>{this.props.title}</p>
                     </div>
                     <div
                         style={{
@@ -61,7 +61,7 @@ export default class EditAchievements extends React.Component {
                 >
                     <div
                         style={{
-                            borderBottom: '1px solid #5555555A',
+                            // borderBottom: '1px solid #5555555A',
                             paddingBottom: 20,
 
                         }}
@@ -71,10 +71,10 @@ export default class EditAchievements extends React.Component {
                             style={{ display: 'flex', flexDirection: 'column', marginBottom: 15 }}
                         >
 
-                            <p className={styles.modal_heading} style={{ fontWeight: 600, marginLeft: 20, marginTop: 0, marginBottom: 10 }}>Award Name</p>
-                            <input type="text"className={styles.modal_para} placeholder="Ex : Write something about yourself"
+                            <p className={styles.modal_heading}>Award Name</p>
+                            <input className={styles.modal_para} type="text" placeholder="Ex : Write something about yourself"
                                 style={{
-                                    // border: '1px solid #5555555A',
+                                    border: '1px solid #5555555A',
                                     padding: 10,
                                     fontSize: 15,
                                     borderRadius: 50
@@ -91,8 +91,8 @@ export default class EditAchievements extends React.Component {
                             style={{ display: 'flex', flexDirection: 'column' }}
                         >
 
-                            <p className={styles.modal_heading} style={{ fontWeight: 600, marginLeft: 20, marginBottom: 10 }}>Issuing organisatione</p>
-                            <input type="text" className={styles.modal_para} placeholder="Ex : Write something about yourself"
+                            <p className={styles.modal_heading}>Issueing Organization</p>
+                            <input className={styles.modal_para} type="text" placeholder="Ex : Write something about yourself"
                                 style={{
                                     border: '1px solid #5555555A',
                                     padding: 10,
@@ -106,7 +106,7 @@ export default class EditAchievements extends React.Component {
                             />
                             <br />
                         </div>
-                        <p style={{ textAlign: 'right', fontSize: 10, color: '#555555', fontWeight: 600, marginRight: 10 }}>Learn More</p>
+                        <p style={{ textAlign: 'right', fontSize: 12, color: '#555555', fontWeight: 500, marginRight: 10 }}>Learn More</p>
                     </div>
 
 
@@ -114,15 +114,16 @@ export default class EditAchievements extends React.Component {
 
                     <div
                         style={{
-                            display: 'flex'
+                            display: 'flex',
+                            marginBottom: 15
                         }}
                     >
                         <div
                             style={{ display: 'flex', flexDirection: 'column', marginRight: 20 }}
                         >
 
-                            <p style={{ fontWeight: 600, marginLeft: 20, marginBottom: 10 }}>Issue Date*</p>
-                            <input type="date" placeholder="Ex : Write something about yourself"
+                            <p className={styles.modal_heading}>Issue Date*</p>
+                            <input className={styles.modal_para} type="date" placeholder="Ex : Write something about yourself"
                                 style={{
                                     border: '1px solid #5555555A',
                                     padding: 10,
@@ -141,7 +142,9 @@ export default class EditAchievements extends React.Component {
 
 
 
-                    <p style={{ fontWeight: 600, marginLeft: 20, marginBottom: 10 }}>Description</p>
+
+
+                    <p className={styles.modal_heading}>Description</p>
                     <div
                         style={{
                             position: 'relative',
@@ -149,7 +152,7 @@ export default class EditAchievements extends React.Component {
                             justifyContent: 'center'
                         }}
                     >
-                        <textarea id="textarea" cols={60} rows={10} placeholder="Ex : Write something about yourself"
+                        <textarea className={styles.modal_para} id={styles.textarea} cols={60} rows={8} placeholder="Ex : Write something about yourself"
                             style={{
                                 border: '1px solid #5555555A',
                                 padding: 10,
@@ -161,6 +164,7 @@ export default class EditAchievements extends React.Component {
                                 this.setState({ desc: event.target.value })
                             }}
                         />
+
                     </div>
                 </div>
 
@@ -181,7 +185,7 @@ export default class EditAchievements extends React.Component {
                             this.props.changeStates(this.state.id, this.state.heading, this.state.subheading, this.state.desc, false)
                             document.body.style.overflow = 'visible'
                             if (this.props.add) {
-                                this.props.addExpContent(this.state.heading, this.state.subheading, this.state.desc)
+                                this.props.addEdContent(this.state.heading, this.state.subheading, this.state.desc)
                             }
                         }}
                     >
@@ -196,7 +200,7 @@ export default class EditAchievements extends React.Component {
                     </button>
                 </div>
 
-            </div >
+            </div>
         )
     }
 }

@@ -1,10 +1,12 @@
 import React from 'react'
 
+import styles from '../../Profile.module.css'
+
 export default class Modal extends React.Component {
     render() {
         return (
             <div
-                id="scroll-div"
+                id={styles.scroll_div}
                 style={{
                     position: 'absolute',
                     top: 0,

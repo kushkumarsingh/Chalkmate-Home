@@ -1,5 +1,7 @@
 import React from 'react'
 
+import styles from '../../Profile.module.css'
+
 export default class EditSkills extends React.Component {
 
     state = {
@@ -10,7 +12,7 @@ export default class EditSkills extends React.Component {
     render() {
         return (
             <div
-                id="template-modal"
+                id={styles.template_modal}
                 style={{
                     backgroundColor: '#fff',
                     padding: 30,
@@ -19,14 +21,14 @@ export default class EditSkills extends React.Component {
                 }}
             >
 
-                <div id="header"
+                <div id={styles.header}
                     style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid #5555555A', paddingBottom: 20, marginBottom: 20 }}
                 >
                     <div
                         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
                     >
                         <img src="./assets/add.svg" height={30} />
-                        <p class="modal-title">{this.props.title}</p>
+                        <p className={styles.modal_title}>{this.props.title}</p>
                     </div>
                     <div
                         style={{
@@ -45,7 +47,7 @@ export default class EditSkills extends React.Component {
                 </div>
 
                 <div
-                    id="scroll-div"
+                    id={styles.scroll_div}
                     style={{
                         maxHeight: 400,
                         overflow: 'scroll',
@@ -78,8 +80,8 @@ export default class EditSkills extends React.Component {
                                                     />
                                                 </div>
                                                 <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-                                                    <p class="section-title">{this.state.names[idx]}</p>
-                                                    <p class="followers">2356452 followers</p>
+                                                    <p className={styles.section_title}>{this.state.names[idx]}</p>
+                                                    <p className={styles.followers}>2356452 followers</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -111,7 +113,7 @@ export default class EditSkills extends React.Component {
                     }}
                 >
                     <button
-                        class='btn'
+                        className={styles.btn}
                         style={{
                             border: '2px solid #6798ef',
                             padding: '12px 60px',
@@ -125,7 +127,7 @@ export default class EditSkills extends React.Component {
                         }}
                     >
                         <p
-                            class="btn-text"
+                            className={styles.btn_text}
                             style={{
                                 margin: 0,
                                 fontWeight: 600,

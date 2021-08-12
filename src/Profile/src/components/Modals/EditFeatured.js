@@ -1,5 +1,7 @@
 import React from 'react'
 
+import styles from '../../Profile.module.css'
+
 export default class EditFeatured extends React.Component {
 
     state = {
@@ -12,7 +14,7 @@ export default class EditFeatured extends React.Component {
 
         return (
             <div
-                id="template-modal"
+                id={styles.template_modal}
                 style={{
                     backgroundColor: '#fff',
                     padding: 30,
@@ -21,14 +23,14 @@ export default class EditFeatured extends React.Component {
                 }}
             >
 
-                <div id="header"
+                <div id={styles.header}
                     style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid #5555555A', paddingBottom: 20, marginBottom: 20 }}
                 >
                     <div
                         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
                     >
                         <img src="./assets/add.svg" height={30} />
-                        <p class="modal-title">{this.props.title}</p>
+                        <p className="modal-title">{this.props.title}</p>
                     </div>
                     <div
                         style={{
@@ -47,7 +49,7 @@ export default class EditFeatured extends React.Component {
                 </div>
 
                 <div
-                    id="scroll-div"
+                    id={styles.scroll_div}
                     style={{
                         maxHeight: 400,
                         overflow: 'scroll',
@@ -73,12 +75,12 @@ export default class EditFeatured extends React.Component {
                                             <div
                                                 style={{  width: '40%', marginRight: 20 }}
                                             >
-                                                <img class="card-img-top" src={img} alt="Card image cap" height="120px" width="100%" />
+                                                <img className={styles.card_img_top} src={img} alt="Card image cap" height="120px" width="100%" />
 
                                             </div>
                                             <div style={{ margin: '10px 0px 10px 0px', width: '40%' }}>
-                                                <p class="modal-heading" style={{marginLeft: 0}}>Crash Course</p>
-                                                <p class="section-desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.</p>
+                                                <p className={styles.modal_heading} style={{marginLeft: 0}}>Crash Course</p>
+                                                <p className={styles.section_desc}>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.</p>
                                             </div>
                                         </div>
                                         <div>
@@ -107,7 +109,7 @@ export default class EditFeatured extends React.Component {
                     }}
                 >
                     <button
-                        class='btn'
+                        className={styles.btn}
                         style={{
                             border: '2px solid #6798ef',
                             padding: '12px 60px',
@@ -122,7 +124,7 @@ export default class EditFeatured extends React.Component {
                         }}
                     >
                         <p
-                            class="btn-text"
+                            className={styles.btn_text}
                             style={{
                                 margin: 0,
                                 fontWeight: 600,

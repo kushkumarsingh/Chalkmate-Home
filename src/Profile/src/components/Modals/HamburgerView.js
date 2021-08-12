@@ -2,6 +2,8 @@
 import React from 'react'
 import RightFeed from '../RightFeed'
 
+import styles from '../../Profile.module.css'
+
 export default class HamburgerView extends React.Component {
 
 
@@ -12,26 +14,24 @@ export default class HamburgerView extends React.Component {
 
         return (
             <div
-                id="hamburger-card"
+                id={styles.hamburger_card}
                 style={{
                     backgroundColor: '#fff',
-                    // position:'relative',
                     height: '100%', 
                     overflowY: 'scroll',
                     scrollbarWidth: 'none',
-                    // paddingBottom: 5
 
                 }}
             >
 
-                <div id="header"
+                <div id={styles.header}
                     style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 10 }}
                 >
                     <div
                         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
                     >
                         {/* <img src="./assets/add.svg" height={30} /> */}
-                        <p class="modal-title"></p>
+                        <p Name={styles.modal_title}></p>
                     </div>
                     <div
                         style={{
@@ -51,7 +51,7 @@ export default class HamburgerView extends React.Component {
 
 
                 <div
-                    id="scroll-div"
+                    id={styles.scroll_div}
                     style={{
                         // height: '100%',
                         // overflow: 'scroll',

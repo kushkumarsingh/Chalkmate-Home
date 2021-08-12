@@ -1,5 +1,7 @@
 import React from 'react'
 
+import styles from '../../Profile.module.css'
+
 export default class EditProfile extends React.Component {
 
     state = {
@@ -18,7 +20,7 @@ export default class EditProfile extends React.Component {
 
         return (
             <div
-                id="template-modal"
+                id={styles.template_modal}
                 style={{
                     backgroundColor: '#fff',
                     padding: 30,
@@ -27,14 +29,14 @@ export default class EditProfile extends React.Component {
                 }}
             >
 
-                <div id="header"
+                <div id={styles.header}
                     style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid #5555555A', paddingBottom: 20, marginBottom: 20 }}
                 >
                     <div
                         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
                     >
                         <img src="./assets/add.svg" height={30} />
-                        <p class="modal-title">{this.props.title}</p>
+                        <p className={styles.modal_title}>{this.props.title}</p>
                     </div>
                     <div
                         style={{
@@ -53,7 +55,7 @@ export default class EditProfile extends React.Component {
                 </div>
 
                 <div
-                    id="scroll-div"
+                    id={styles.scroll_div}
                     style={{
                         maxHeight: 400,
                         overflow: 'scroll',
@@ -72,8 +74,8 @@ export default class EditProfile extends React.Component {
                             style={{ display: 'flex', flexDirection: 'column', marginBottom: 15 }}
                         >
 
-                            <p class="modal-heading" style={{padding: '10px 15px'}}>Username</p>
-                            <input class="modal-para" type="text" placeholder="Ex : John Doe"
+                            <p className={styles.modal_heading} style={{padding: '10px 15px'}}>Username</p>
+                            <input className={styles.modal_para} type="text" placeholder="Ex : John Doe"
                                 style={{
                                     border: '1px solid #5555555A',
                                     padding: 10,
@@ -92,8 +94,8 @@ export default class EditProfile extends React.Component {
                             style={{ display: 'flex', flexDirection: 'column', marginBottom: 15 }}
                         >
 
-                            <p class="modal-heading" style={{padding: '10px 15px'}}>Designation</p>
-                            <input class="modal-para" type="text" placeholder="Ex : Physics Teacher"
+                            <p className={styles.modal_heading} style={{padding: '10px 15px'}}>Designation</p>
+                            <input className={styles.modal_para} type="text" placeholder="Ex : Physics Teacher"
                                 style={{
                                     border: '1px solid #5555555A',
                                     padding: 10,
@@ -111,10 +113,10 @@ export default class EditProfile extends React.Component {
                             style={{ display: 'flex', flexDirection: 'column' }}
                         >
 
-                            <p class="modal-heading" style={{padding: '10px 15px'}}>Location</p>
+                            <p className={styles.modal_heading} style={{padding: '10px 15px'}}>Location</p>
 
 
-                            <select class="modal-para" style={{
+                            <select className={styles.modal_para} style={{
                                 border: '1px solid #5555555A',
                                 padding: 10,
                                 fontSize: 15,
@@ -383,7 +385,7 @@ export default class EditProfile extends React.Component {
                     }}
                 >
                     <button
-                        class='btn'
+                        className={styles.btn}
                         style={{
                             border: '2px solid #6798ef',
                             padding: '12px 60px',
@@ -397,7 +399,7 @@ export default class EditProfile extends React.Component {
                         }}
                     >
                         <p
-                            class="btn-text"
+                            className={styles.btn_text}
                             style={{
                                 margin: 0,
                                 fontWeight: 600,

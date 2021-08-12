@@ -1,5 +1,7 @@
 import React from 'react'
 
+import styles from '../../Profile.module.css'
+
 export default class EditExperience extends React.Component {
 
     state = {
@@ -15,7 +17,7 @@ export default class EditExperience extends React.Component {
 
         return (
             <div
-                id="template-modal"
+                id={styles.template_modal}
                 style={{
                     backgroundColor: '#fff',
                     padding: 30,
@@ -24,14 +26,14 @@ export default class EditExperience extends React.Component {
                 }}
             >
 
-                <div id="header"
+                <div id={styles.header}
                     style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid #5555555A', paddingBottom: 20, marginBottom: 20 }}
                 >
                     <div
                         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
                     >
                         <img src="./assets/add.svg" height={30} />
-                        <p class="modal-title">{this.props.title}</p>
+                        <p className={styles.modal_title}>{this.props.title}</p>
                     </div>
                     <div
                         style={{
@@ -50,7 +52,7 @@ export default class EditExperience extends React.Component {
                 </div>
 
                 <div
-                    id="scroll-div"
+                    id={styles.scroll_div}
                     style={{
                         maxHeight: 400,
                         overflow: 'scroll',
@@ -69,8 +71,8 @@ export default class EditExperience extends React.Component {
                             style={{ display: 'flex', flexDirection: 'column', marginBottom: 15 }}
                         >
 
-                            <p class="modal-heading">Title</p>
-                            <input class="modal-para" type="text" placeholder="Ex : Write something about yourself"
+                            <p className={styles.modal_heading}>Title</p>
+                            <input className={styles.modal_para} type="text" placeholder="Ex : Write something about yourself"
                                 style={{
                                     border: '1px solid #5555555A',
                                     padding: 10,
@@ -89,8 +91,8 @@ export default class EditExperience extends React.Component {
                             style={{ display: 'flex', flexDirection: 'column' }}
                         >
 
-                            <p class="modal-heading">Employment Type</p>
-                            <input class="modal-para" type="text" placeholder="Ex : Write something about yourself"
+                            <p className={styles.modal_heading}>Employment Type</p>
+                            <input className={styles.modal_para} type="text" placeholder="Ex : Write something about yourself"
                                 style={{
                                     border: '1px solid #5555555A',
                                     padding: 10,
@@ -112,8 +114,8 @@ export default class EditExperience extends React.Component {
                         style={{ display: 'flex', flexDirection: 'column', marginBottom: 15 }}
                     >
 
-                        <p class="modal-heading">Company*</p>
-                        <input class="modal-para" type="text" placeholder="Ex : Write something about yourself"
+                        <p className={styles.modal_heading}>Company*</p>
+                        <input className={styles.modal_para} type="text" placeholder="Ex : Write something about yourself"
                             style={{
                                 border: '1px solid #5555555A',
                                 padding: 10,
@@ -138,8 +140,8 @@ export default class EditExperience extends React.Component {
                             style={{ display: 'flex', flexDirection: 'column', marginRight: 20 }}
                         >
 
-                            <p class="modal-heading">Start Date*</p>
-                            <input class="modal-para" type="date" placeholder="Ex : Write something about yourself"
+                            <p className={styles.modal_heading}>Start Date*</p>
+                            <input className={styles.modal_para} type="date" placeholder="Ex : Write something about yourself"
                                 style={{
                                     border: '1px solid #5555555A',
                                     padding: 10,
@@ -157,8 +159,8 @@ export default class EditExperience extends React.Component {
                             style={{ display: 'flex', flexDirection: 'column' }}
                         >
 
-                            <p class="modal-heading">End Date*</p>
-                            <input class="modal-para" type="date" placeholder="Ex : Write something about yourself"
+                            <p className={styles.modal_heading}>End Date*</p>
+                            <input className={styles.modal_para} type="date" placeholder="Ex : Write something about yourself"
                                 style={{
                                     border: '1px solid #5555555A',
                                     padding: 10,
@@ -176,7 +178,7 @@ export default class EditExperience extends React.Component {
 
 
 
-                    <p class="modal-heading">Description</p>
+                    <p className={styles.modal_heading}>Description</p>
                     <div
                         style={{
                             position: 'relative',
@@ -185,7 +187,7 @@ export default class EditExperience extends React.Component {
                         }}
                     >
 
-                        <textarea class="modal-para" id="textarea" cols={55} rows={8} placeholder="Ex : Write something about yourself"
+                        <textarea className={styles.modal_para} id={styles.textarea} cols={55} rows={8} placeholder="Ex : Write something about yourself"
                             style={{
                                 border: '1px solid #5555555A',
                                 padding: 10,
@@ -206,7 +208,7 @@ export default class EditExperience extends React.Component {
                     }}
                 >
                     <button
-                        class='btn'
+                        className={styles.btn}
                         style={{
                             border: '2px solid #6798ef',
                             padding: '12px 60px',
@@ -222,7 +224,7 @@ export default class EditExperience extends React.Component {
                         }}
                     >
                         <p
-                            class="btn-text"
+                            className={styles.btn_text}
                             style={{
                                 margin: 0,
                                 fontWeight: 600,

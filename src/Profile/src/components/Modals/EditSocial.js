@@ -1,5 +1,7 @@
 import React from 'react'
 
+import styles from '../../Profile.module.css'
+
 export default class EditSocial extends React.Component {
 
     socialImages = [
@@ -13,7 +15,7 @@ export default class EditSocial extends React.Component {
     render() {
         return (
             <div
-                id="template-modal"
+                id={styles.template_modal}
                 style={{
                     backgroundColor: '#fff',
                     padding: 30,
@@ -22,14 +24,14 @@ export default class EditSocial extends React.Component {
                 }}
             >
 
-                <div id="header"
+                <div id={styles.header}
                     style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid #5555555A', paddingBottom: 20, marginBottom: 20 }}
                 >
                     <div
                         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
                     >
                         <img src="./assets/add.svg" height={30} />
-                        <p class="modal-title">{this.props.title}</p>
+                        <p className={styles.modal_title}>{this.props.title}</p>
                     </div>
                     <div
                         style={{
@@ -63,7 +65,7 @@ export default class EditSocial extends React.Component {
                                     
                                     {/* <p style={{margin: 0}}>{img}</p> */}
                                     <img src={img} style={{height: 35, marginRight: 15}} />
-                                    <input class="modal-para" id="textarea" type="text" placeholder="Ex : Add social link"
+                                    <input className={styles.modal_para} id={styles.textarea} type="text" placeholder="Ex : Add social link"
                                         style={{
                                             border: '1px solid #5555555A',
                                             padding: 10,
@@ -98,7 +100,7 @@ export default class EditSocial extends React.Component {
                     }}
                 >
                     <button
-                        class='btn'
+                        className={styles.btn}
                         style={{
                             border: '2px solid #6798ef',
                             padding: '12px 60px',
@@ -112,7 +114,7 @@ export default class EditSocial extends React.Component {
                         }}
                     >
                         <p
-                            class="btn-text"
+                            className={styles.btn_text}
                             style={{
                                 margin: 0,
                                 fontWeight: 600,
