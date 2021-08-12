@@ -136,8 +136,8 @@ export default class InterestsFeed extends React.Component {
                                                     <div>
                                                         <img
                                                             src={img}
-                                                            height="60px"
-                                                            width="60px"
+                                                            height="50px"
+                                                            width="50px"
                                                             style={{ borderRadius: 40, margin: 10 }}
                                                         />
                                                     </div>

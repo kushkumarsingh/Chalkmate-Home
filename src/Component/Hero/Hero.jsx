@@ -122,7 +122,7 @@ function Hero(){
             </section>
             <div className='map-section'>
                 <div className='section-heading' style={{color: '#4951EC'}}>Our Global Presence</div>
-                <img className='map' src="Assets/map.png" alt="" />
+                <img className='map' src="Assets/map-home.png" alt="" />
             </div>
         </div>
 
