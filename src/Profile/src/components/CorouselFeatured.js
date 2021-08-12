@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from '../Profile.module.css'
 
 const CorouselImages = ["#0088FE", "#00C49F", "#FFBB28"];
 const delay = 2500;
@@ -18,15 +19,15 @@ export default class CorouselFeed extends React.Component {
 
 
         return (
-            <div className="slideshow" style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', position: 'relative' }}>
+            <div className={styles.slideshow} style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', position: 'relative' }}>
                 <div
-                    className="slideshowSlider"
+                    className={styles.slideshowSlider}
                     style={{ transform: `translate3d(${-this.state.index * 100}%, 0, 0)` }}
                 >
                     {Array.from({ length: this.props.content.length / 3 }).map(index => (
                         
                         <div
-                            className="slide"
+                            className={styles.slide}
                             key={index}
                             style={{ backgroundColor: 'red' }}
                         >
@@ -57,11 +58,11 @@ export default class CorouselFeed extends React.Component {
                     }}
                 >
 
-                    <div className="slideshowDots">
+                    <div className={styles.slideshowDots}>
                         {Array.from({ length: this.props.content.length / 3 }).map(idx => (
                             <div
                                 key={idx}
-                                className={`slideshowDot${this.state.index === idx ? " active" : ""}`}
+                                className={`${styles.slideshowDot}${this.state.index === idx ? styles.active : ""}`}
                                 onClick={() => { this.setIndex(idx) }} ></div>
                         ))}
                     </div>

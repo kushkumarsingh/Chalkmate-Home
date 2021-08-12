@@ -2,6 +2,7 @@ import React from 'react'
 import Modal from './Modals/Modal'
 import EditExperience from './Modals/EditExperience'
 
+import styles from '../Profile.module.css'
 
 export default class ExperienceFeed extends React.Component {
 
@@ -70,7 +71,7 @@ export default class ExperienceFeed extends React.Component {
         return (
             <div>
                 <div
-                    class="profile-title"
+                    className={styles.profile_title}
                 >
 
                     <div
@@ -87,11 +88,11 @@ export default class ExperienceFeed extends React.Component {
                                 alignItems: 'center'
                             }}
                         >
-                            <div class="icon-container">
-                                <img class="inner-icon" src="Image/Icons/experience.svg" alt=" " />
+                            <div className={styles.icon_container}>
+                                <img className={styles.inner_icon} src="Image/Icons/experience.svg" alt=" " />
                             </div>
                             <div>
-                                <p class="icon-text">Experience </p>
+                                <p className={styles.icon_text}>Experience </p>
                             </div>
                         </div>
                     </div>
@@ -99,7 +100,7 @@ export default class ExperienceFeed extends React.Component {
 
                 <br />
                 <div
-                    class="desc"
+                    className={styles.desc}
                     style={{
                         boxShadow: '0px 0px 20px #5555551a',
                         padding: 10,
@@ -115,12 +116,12 @@ export default class ExperienceFeed extends React.Component {
                                 }}
                             >
                                 <p
-                                    class="edit-info"
+                                    className={styles.edit_info}
                                 >
                                     Add information about your experiences.
                                 </p>
                                 <button
-                                    class='btn'
+                                    className={styles.btn}
                                     style={{
                                         border: '2px solid #6798ef',
                                         padding: '12px 20px',
@@ -133,7 +134,7 @@ export default class ExperienceFeed extends React.Component {
                                     }}
                                 >
                                     <p
-                                        class="btn-text"
+                                        className={styles.btn_text}
 
                                     >+ add experience</p>
                                 </button>
@@ -174,7 +175,7 @@ export default class ExperienceFeed extends React.Component {
                                                     }}
                                                 >
                                                     <div>
-                                                        <p class="section-title">{item.heading}<br /><span class="followers">{item.subheading}</span></p>
+                                                        <p className={styles.section_title}>{item.heading}<br /><span className={styles.followers}>{item.subheading}</span></p>
 
                                                     </div>
                                                     {
@@ -195,8 +196,8 @@ export default class ExperienceFeed extends React.Component {
                                                             null
                                                     }
                                                 </div>
-                                                <p class="followers" style={{ opacity: 0.7, color: '#555555', marginBottom: 6 }}>Jan 2011 - Nov 2015</p>
-                                                <p class="section-desc">
+                                                <p className={styles.followers} style={{ opacity: 0.7, color: '#555555', marginBottom: 6 }}>Jan 2011 - Nov 2015</p>
+                                                <p className={styles.section_desc}>
                                                     {item.desc}
                                                 </p>
                                             </div>

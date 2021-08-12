@@ -8,7 +8,7 @@ export default class AddFeaturedLink extends React.Component {
 
         return (
             <div
-                id="template-modal"
+                id={styles.template_modal}
                 style={{
                     backgroundColor: '#fff',
                     padding: 30,
@@ -17,7 +17,7 @@ export default class AddFeaturedLink extends React.Component {
                 }}
             >
 
-                <div id="header"
+                <div id={styles.header}
                     style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid #5555555A', paddingBottom: 20, marginBottom: 20 }}
                 >
                     <div
@@ -44,7 +44,7 @@ export default class AddFeaturedLink extends React.Component {
                 </div>
 
                 <div
-                    id="scroll-div"
+                    id={styles.scroll_div}
                     style={{
                         maxHeight: 400,
                         overflow: 'scroll',
@@ -62,7 +62,7 @@ export default class AddFeaturedLink extends React.Component {
                             style={{ display: 'flex', flexDirection: 'column' }}
                         >
 
-                            <p className={styles.modal_headeing}>Enter a link</p>
+                            <p className={styles.modal_heading}>Enter a link</p>
                             <input type="text" className={styles.modal_para} placeholder="Paste or type a link to a file or video"
                                 style={{
                                     border: '1px solid #5555555A',

@@ -2,6 +2,8 @@ import React from 'react'
 import Modal from './Modals/Modal'
 import EditSocial from './Modals/EditSocial'
 
+import styles from '../Profile.module.css'
+
 export default class SocailFeed extends React.Component {
 
 
@@ -22,10 +24,9 @@ export default class SocailFeed extends React.Component {
     }
 
     render() {
-        console.log("+++++++", this.props)
         return (
             <div
-                class="desc"
+                className={styles.desc}
                 style={{
                     boxShadow: '0px 0px 20px #5555551a',
                     padding: 10,
@@ -45,12 +46,12 @@ export default class SocailFeed extends React.Component {
                             <div style={{ display: 'flex', alignItems: 'center' }}>
 
 
-                                <div class="hov" style={{ height: 40, width: 40, borderRadius: 100, border: '1px solid #236AE8', display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }}
+                                <div className={styles.hov} style={{ height: 40, width: 40, borderRadius: 100, border: '1px solid #236AE8', display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }}
                                     onClick={() => {
                                         document.body.style.overflow = 'hidden'
                                         this.changeEdit(true)
                                     }}
-                                ><p class="pilus" style={{ margin: 0, fontSize: 30 }}>+</p></div>
+                                ><p className={styles.pilus} style={{ margin: 0, fontSize: 30 }}>+</p></div>
 
                             </div>
                             :

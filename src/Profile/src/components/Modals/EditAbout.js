@@ -1,6 +1,6 @@
 import React from 'react'
 
-// import {} from "../../images/"
+import styles from '../../Profile.module.css'
 
 export default class EditAbout extends React.Component {
 
@@ -26,7 +26,7 @@ export default class EditAbout extends React.Component {
 
         return (
             <div
-                id="template-modal"
+                id={styles.template_modal}
                 style={{
                     backgroundColor: '#fff',
                     padding: 30,
@@ -35,14 +35,14 @@ export default class EditAbout extends React.Component {
                 }}
             >
 
-                <div id="header"
+                <div id={styles.header}
                     style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid #5555555A', paddingBottom: 20, marginBottom: 20 }}
                 >
                     <div
                         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
                     >
                         <img src="./assets/add.svg" height={30} />
-                        <p class="modal-title">{this.props.title}</p>
+                        <p className={styles.modal_title}>{this.props.title}</p>
                     </div>
                     <div
                         style={{
@@ -63,7 +63,7 @@ export default class EditAbout extends React.Component {
                 
 
                 <div>
-                    <p class="modal-heading">Summary</p>
+                    <p className={styles.modal_heading}>Summary</p>
                     <div
                         style={{
                             position: 'relative',
@@ -72,7 +72,7 @@ export default class EditAbout extends React.Component {
                         }}
                     >
 
-                        <textarea id="textarea" class='modal-para' rows={8} placeholder="Ex : Write something about yourself"
+                        <textarea id="textarea" className={styles.modal_para} rows={8} placeholder="Ex : Write something about yourself"
 
                             value={this.state.text}
                             onChange={(event) => {
@@ -88,7 +88,7 @@ export default class EditAbout extends React.Component {
                     }}
                 >
                     <button
-                        class='btn'
+                        className={styles.btn}
                         style={{
                             border: '2px solid #6798ef',
                             padding: '12px 60px',
@@ -103,7 +103,7 @@ export default class EditAbout extends React.Component {
                         }}
                     >
                         <p
-                            class="btn-text"
+                            className={styles.btn_text}
                             style={{
                                 margin: 0,
                                 fontWeight: 600,

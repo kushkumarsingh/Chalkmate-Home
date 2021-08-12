@@ -3,6 +3,8 @@ import Modal from './Modals/Modal'
 import AddInterests from './Modals/AddInterests'
 import EditInterests from './Modals/EditInterests'
 
+import styles from '../Profile.module.css'
+
 export default class InterestsFeed extends React.Component {
 
 
@@ -33,7 +35,7 @@ export default class InterestsFeed extends React.Component {
         return (
             <div>
                 <div
-                    class="profile-title"
+                    className={styles.profile_title}
                 >
 
                     <div
@@ -51,11 +53,11 @@ export default class InterestsFeed extends React.Component {
                             }}
                         >
 
-                            <div class="icon-container">
-                                <img class="inner-icon" src="Image/Icons/intrests.svg" alt=" " />
+                            <div className={styles.icon_container}>
+                                <img className={styles.inner_icon} src="Image/Icons/intrests.svg" alt=" " />
                             </div>
                             <div>
-                                <p class="icon-text">Interests </p>
+                                <p className={styles.icon_text}>Interests </p>
                             </div>
 
                         </div>
@@ -78,7 +80,7 @@ export default class InterestsFeed extends React.Component {
 
                 <br />
                 <div
-                    class="desc"
+                    className={styles.desc}
                     style={{
                         boxShadow: '0px 0px 20px #5555551a',
                         padding: 10,
@@ -97,12 +99,12 @@ export default class InterestsFeed extends React.Component {
                             this.props.editpage ?
                                 <div>
                                     <p
-                                        class="edit-info"
+                                        className={styles.edit_info}
                                     >
                                         Add your interests
                                     </p>
                                     <button
-                                        class='btn'
+                                        className={styles.btn}
                                         style={{
                                             border: '2px solid #6798ef',
                                             padding: '12px 20px',
@@ -115,7 +117,7 @@ export default class InterestsFeed extends React.Component {
                                         }}
                                     >
                                         <p
-                                            class="btn-text"
+                                            className={styles.btn_text}
                                         >+ ADD INTERESTS</p>
                                     </button>
 
@@ -140,8 +142,8 @@ export default class InterestsFeed extends React.Component {
                                                         />
                                                     </div>
                                                     <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-                                                        <p class="section-title">{this.state.featuredName[idx]}</p>
-                                                        <p class="followers">2356452 followers</p>
+                                                        <p className={styles.section_title}>{this.state.featuredName[idx]}</p>
+                                                        <p className={styles.followers}>2356452 followers</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -165,7 +167,7 @@ export default class InterestsFeed extends React.Component {
                             }
                         }}
                     >
-                        <btn class="see-all-text">{this.state.endIdx <= 4 ? "SEE ALL" : "COLLAPSE"}</btn>
+                        <btn className={styles.see_all_text}>{this.state.endIdx <= 4 ? "SEE ALL" : "COLLAPSE"}</btn>
                     </div>
                 </div>
 

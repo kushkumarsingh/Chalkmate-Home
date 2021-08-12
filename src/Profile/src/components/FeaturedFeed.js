@@ -11,6 +11,8 @@ import EditFeatured from './Modals/EditFeatured';
 
 import CorouselFeatured from './CorouselFeatured';
 
+import styles from '../Profile.module.css'
+
 export default class FeaturedFeed extends React.Component {
 
     state = {
@@ -60,10 +62,10 @@ export default class FeaturedFeed extends React.Component {
     render() {
         return (
             <div
-                class="featured-div"
+                className={styles.featured_div}
             >
                 <div
-                    class="profile-title"
+                    className={styles.profile_title}
                 >
 
                     <div
@@ -80,11 +82,11 @@ export default class FeaturedFeed extends React.Component {
                                 alignItems: 'center'
                             }}
                         >
-                            <div class="icon-container">
-                                <img class="inner-icon" src="Image/Chalkmate_Featured.svg" alt=" " />
+                            <div className={styles.icon_container}>
+                                <img className={styles.inner_icon} src="Image/Chalkmate_Featured.svg" alt=" " />
                             </div>
                             <div>
-                                <p class="icon-text" >Featured </p>
+                                <p className={styles.icon_text} >Featured </p>
                             </div>
                         </div>
                         <div
@@ -115,11 +117,11 @@ export default class FeaturedFeed extends React.Component {
                                 >
                                     <KeyboardArrowRightIcon style={{ width: 22, height: 22 }} />
                                 </div>
-                                <div class="dropdown-featured">
+                                <div className={styles.dropdown_featured}>
                                     {
                                         this.props.editpage ?
                                             <div
-                                                class="dropbtn-featured"
+                                                className={styles.dropbtn_featured}
                                                 style={{ backgroundColor: '#E5E5E5', borderRadius: 30, display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}
 
                                             >
@@ -128,7 +130,7 @@ export default class FeaturedFeed extends React.Component {
                                             :
                                             null
                                     }
-                                    <div class="dropdown-content-featured">
+                                    <div className={styles.dropdown_content_featured}>
                                         <a
                                             onClick={() => {
                                                 this.setState({ title: 'Add Featured Post', edit: true })
@@ -165,7 +167,7 @@ export default class FeaturedFeed extends React.Component {
                 <br />
 
                 <div
-                    class="desc"
+                    className={styles.desc}
                     style={{
                         boxShadow: '0px 0px 20px #5555551a',
                         borderRadius: 10,
@@ -178,16 +180,16 @@ export default class FeaturedFeed extends React.Component {
                         style={{ display: 'flex', justifyContent: 'center', width: '100%' }}
                     >
 
-                        <div id="featured-scroll" class="scroll-div" style={{ display: 'flex', padding: 0, maxWidth: 600, overflow: 'scroll' }}>
+                        <div id='featured-scroll' className={styles.scroll_div} style={{ display: 'flex', padding: 0, maxWidth: 600, overflow: 'scroll' }}>
                             {
                                 this.state.featuredImage.map((img, _) => {
                                     return (
                                         <div style={{ margin: 5 }}>
                                             <div>
-                                                <img class="card-img-top" src={img} alt="Card image cap" style={{ height: 128, width: '250px' }} />
+                                                <img className={styles.card_img_top} src={img} alt="Card image cap" style={{ height: 128, width: '250px' }} />
                                                 <div style={{ margin: '10px 0px 10px 0px' }}>
-                                                    <p class="section-title">Crash Course</p>
-                                                    <p class="featured-desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.</p>
+                                                    <p className={styles.section_title}>Crash Course</p>
+                                                    <p className={styles.featured_desc}>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.</p>
                                                 </div>
                                             </div>
                                         </div>

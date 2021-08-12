@@ -1,5 +1,7 @@
 import React from 'react'
 
+import styles from '../Profile.module.css'
+
 export default class IconSectionFeed extends React.Component {
 
     feedTitle = ["About", "Featured", "Interests", "Experience", "Education", "Licenses and Certifications", "Volunteer Experience", "Skills and endorsements", "Recommendations", "Achievements"]
@@ -28,7 +30,7 @@ export default class IconSectionFeed extends React.Component {
                             return (
 
                                 <div
-                                    class="profile-title"
+                                    className={styles.profile_title}
                                     style={{ marginBottom: 10 }}
                                 >
                                     <a
@@ -57,11 +59,11 @@ export default class IconSectionFeed extends React.Component {
                                             >
 
 
-                                                <div class="icon-container">
-                                                    <img class="inner-icon" src={this.feedTitleImages[idx]} alt=" " />
+                                                <div className={styles.icon_container}>
+                                                    <img className={styles.inner_icon} src={this.feedTitleImages[idx]} alt=" " />
                                                 </div>
                                                 <div>
-                                                    <p class="icon-text">{title}</p>
+                                                    <p className={styles.icon_text}>{title}</p>
                                                 </div>
                                             </div>
                                         </div>

@@ -1,5 +1,7 @@
 import React from 'react'
 
+import styles from '../Profile.module.css'
+
 export default class UpskillingFeed extends React.Component {
 
     contentImages = [
@@ -15,7 +17,7 @@ export default class UpskillingFeed extends React.Component {
         return (
             <div>
                 <div
-                    class="profile-title"
+                    className={styles.profile_title}
                 >
 
                     <div
@@ -33,11 +35,11 @@ export default class UpskillingFeed extends React.Component {
                             }}
                         >
 
-                            <div class="icon-container">
-                                <img class="inner-icon" src="Image/Icons/learning.svg" alt=" " />
+                            <div className={styles.icon_container}>
+                                <img className={styles.inner_icon} src="Image/Icons/learning.svg" alt=" " />
                             </div>
                             <div>
-                                <p class="icon-text">Upskilling and Reskilling</p>
+                                <p className={styles.icon_text}>Upskilling and Reskilling</p>
                             </div>
                         </div>
                     </div>
@@ -45,7 +47,7 @@ export default class UpskillingFeed extends React.Component {
                 <br />
 
                 <div
-                    class="desc"
+                    className={styles.desc}
                     style={{
                         boxShadow: '0px 0px 20px #5555551a',
                         padding: 20,
@@ -64,7 +66,7 @@ export default class UpskillingFeed extends React.Component {
                                         style={{ width: "50%", cursor: 'pointer' }}
                                     >
                                         <div
-                                            class="up"
+                                            className={styles.up}
                                             style={{
                                                 width: "100%",
                                                 marginTop: idx == 0 || idx == 1 ? 0 : 20
@@ -80,7 +82,7 @@ export default class UpskillingFeed extends React.Component {
                                                 <img src={img} style={{ width: '90%', height: 'auto' }} />
                                             </div>
                                             <div
-                                                class="up-desc"
+                                                className={styles.up_desc}
                                                 style={{
                                                     display: 'flex',
                                                     flexDirection: 'column',
@@ -89,7 +91,7 @@ export default class UpskillingFeed extends React.Component {
                                                 }}
                                             >
                                                 <p
-                                                    class="followers"
+                                                    className={styles.followers}
                                                     style={{
                                                         fontSize: 12,
                                                         fontWeight: 600,

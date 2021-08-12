@@ -1,12 +1,14 @@
 import React from 'react'
 
+import styles from '../Profile.module.css'
+
 export default class PeopleYouMayKnow extends React.Component {
     render() {
         return (
-            <div class="people-div">
+            <div className="people-div">
 
                 <div
-                    class="profile-title"
+                    className={styles.profile_title}
                 >
 
                     <div
@@ -25,11 +27,11 @@ export default class PeopleYouMayKnow extends React.Component {
                             }}
                         >
 
-                            <div class="icon-container">
-                                <img class="inner-icon" src="Image/Icons/about.svg" alt=" " />
+                            <div className={styles.icon_container}>
+                                <img className={styles.inner_icon} src="Image/Icons/about.svg" alt=" " />
                             </div>
                             <div>
-                                <p class="icon-text">People You May Know</p>
+                                <p className={styles.icon_text}>People You May Know</p>
                             </div>
                         </div>
                     </div>
@@ -37,7 +39,7 @@ export default class PeopleYouMayKnow extends React.Component {
                 <br />
 
                 <div
-                    class="desc"
+                    className={styles.desc}
                     style={{
                         boxShadow: '0px 0px 20px #5555551a',
                         padding: 10,
@@ -49,8 +51,8 @@ export default class PeopleYouMayKnow extends React.Component {
                     {
                         Array.from({ length: 4 }).map(() => {
                             return (
-                                <div class="col interestIndividual" >
-                                    <div class="hovme" style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                <div className={`${styles.col} ${styles.interestIndividual}`}>
+                                    <div className="hovme" style={{ display: 'flex', justifyContent: 'space-between' }}>
                                         <div
                                             style={{
                                                 display: 'flex'
@@ -64,14 +66,14 @@ export default class PeopleYouMayKnow extends React.Component {
                                                     style={{ borderRadius: 40, margin: '5px 10px 5px 10px' }}
                                                 />
                                             </div>
-                                            <div className="mar0" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-                                                <p class="hovmep section-title">Ananya Chandra</p>
-                                                <p class="followers">Founder and CEO</p>
-                                                <p class="followers">Women Prosperity Lab</p>
+                                            <div className={styles.mar0} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                                                <p className={`${styles.hovmep} ${styles.section_title}`}>Ananya Chandra</p>
+                                                <p className={styles.followers}>Founder and CEO</p>
+                                                <p className={styles.followers}>Women Prosperity Lab</p>
                                             </div>
                                         </div>
                                         <div style={{ display: 'flex', alignItems: 'center'}}>
-                                            <div class="hov" style={{ height: 40, width: 40, borderRadius: 100, border: '1px solid #236AE8', display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }}><p class="pilus" style={{ margin: 0, fontSize: 30 }}>+</p></div>
+                                            <div className={styles.hov} style={{ height: 40, width: 40, borderRadius: 100, border: '1px solid #236AE8', display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }}><p className={styles.pilus} style={{ margin: 0, fontSize: 30 }}>+</p></div>
                                         </div>
                                     </div>
                                 </div>

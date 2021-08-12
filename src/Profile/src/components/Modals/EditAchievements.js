@@ -1,5 +1,7 @@
 import React from 'react'
 
+import styles from '../../Profile.module.css'
+
 export default class EditAchievements extends React.Component {
 
     state = {
@@ -15,7 +17,7 @@ export default class EditAchievements extends React.Component {
 
         return (
             <div
-                id="template-modal"
+                id={styles.template_modal}
                 style={{
                     backgroundColor: '#fff',
                     padding: 30,
@@ -50,7 +52,7 @@ export default class EditAchievements extends React.Component {
                 </div>
 
                 <div
-                    id="scroll-div"
+                    id={styles.scroll_div}
                     style={{
                         maxHeight: 400,
                         overflow: 'scroll',
@@ -66,13 +68,13 @@ export default class EditAchievements extends React.Component {
                     >
 
                         <div
-                            style={{ display: 'flex', flexDirection: 'column' }}
+                            style={{ display: 'flex', flexDirection: 'column', marginBottom: 15 }}
                         >
 
-                            <p style={{ fontWeight: 600, marginLeft: 20, marginTop: 0, marginBottom: 10 }}>Award Name</p>
-                            <input type="text" placeholder="Ex : Write something about yourself"
+                            <p className={styles.modal_heading} style={{ fontWeight: 600, marginLeft: 20, marginTop: 0, marginBottom: 10 }}>Award Name</p>
+                            <input type="text"className={styles.modal_para} placeholder="Ex : Write something about yourself"
                                 style={{
-                                    border: '1px solid #5555555A',
+                                    // border: '1px solid #5555555A',
                                     padding: 10,
                                     fontSize: 15,
                                     borderRadius: 50
@@ -89,8 +91,8 @@ export default class EditAchievements extends React.Component {
                             style={{ display: 'flex', flexDirection: 'column' }}
                         >
 
-                            <p style={{ fontWeight: 600, marginLeft: 20, marginBottom: 10 }}>Issuing organisatione</p>
-                            <input type="text" placeholder="Ex : Write something about yourself"
+                            <p className={styles.modal_heading} style={{ fontWeight: 600, marginLeft: 20, marginBottom: 10 }}>Issuing organisatione</p>
+                            <input type="text" className={styles.modal_para} placeholder="Ex : Write something about yourself"
                                 style={{
                                     border: '1px solid #5555555A',
                                     padding: 10,
@@ -168,7 +170,7 @@ export default class EditAchievements extends React.Component {
                     }}
                 >
                     <button
-                        class='btn'
+                        className={styles.btn}
                         style={{
                             border: '2px solid #6798ef',
                             padding: '12px 60px',
@@ -184,7 +186,7 @@ export default class EditAchievements extends React.Component {
                         }}
                     >
                         <p
-                            class="btn-text"
+                            className={styles.btn_text}
                             style={{
                                 margin: 0,
                                 fontWeight: 600,

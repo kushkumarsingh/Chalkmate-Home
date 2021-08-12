@@ -44,7 +44,7 @@ export default class AddFeatured extends React.Component {
 
         return (
             <div
-                id="template-modal"
+                id={styles.template_modal}
                 style={{
                     backgroundColor: '#fff',
                     padding: 30,
@@ -53,7 +53,7 @@ export default class AddFeatured extends React.Component {
                 }}
             >
 
-                <div id="header"
+                <div id={styles.header}
                     style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid #5555555A', paddingBottom: 20, marginBottom: 20 }}
                 >
                     <div
@@ -80,7 +80,7 @@ export default class AddFeatured extends React.Component {
                 </div>
 
                 <div
-                    id="scroll-div"
+                    id={styles.scroll_div}
                     style={{
                         maxHeight: 400,
                         maxWidth: 600,

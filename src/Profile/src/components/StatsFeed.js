@@ -41,7 +41,7 @@ export default class StatsFeed extends React.Component {
 
                         <div>
                             <div
-                                class="desc"
+                                className={styles.desc}
                                 style={{
                                     boxShadow: '0px 0px 20px #5555551a',
                                     padding: 10,
@@ -63,7 +63,7 @@ export default class StatsFeed extends React.Component {
                                             }}
                                         >Who Viewed your Profile</p>
                                     </div>
-                                    <div className="col-5">
+                                    <div className={styles.col_5}>
                                         <img
                                             src="Image/Icons/sidechart1.png"
                                             alt=" "

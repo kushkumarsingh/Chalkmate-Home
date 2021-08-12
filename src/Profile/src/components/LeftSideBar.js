@@ -6,6 +6,8 @@ import SocailFeed from './SocialFeed';
 import IconSectionFeed from './IconSectionFeed';
 import StatsFeed from './StatsFeed';
 
+import styles from '../Profile.module.css'
+
 export default class LeftSideBar extends React.Component {
     render() {
         return (
@@ -55,7 +57,7 @@ export default class LeftSideBar extends React.Component {
 
                 <div
 
-                    class="icon-section-feed"
+                    className={styles.icon_section_feed}
                     style={{
                         width: '100%'
                     }}

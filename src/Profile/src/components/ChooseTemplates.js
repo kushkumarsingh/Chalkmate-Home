@@ -6,6 +6,8 @@ import TemplatePreviewCard from './TemplatePreviewCard'
 import CloseIcon from '@material-ui/icons/Close';
 
 
+import styles from '../Profile.module.css'
+
 export default class ChooseTemplates extends React.Component {
 
 
@@ -50,7 +52,7 @@ export default class ChooseTemplates extends React.Component {
                 }}
             >
                 <div
-                    id="template-modal"
+                    id={styles.template_modal}
                     style={{
                         backgroundColor: '#fff',
                         padding: 30,
@@ -68,7 +70,7 @@ export default class ChooseTemplates extends React.Component {
                         style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid #5555551A', paddingBottom: 20, alignItems: 'center' }}
                     >
                         <p
-                            style={{ margin: 0, fontWeight: 500 }}
+                            style={{ margin: 0, fontWeight: 600, fontSize:16 }}
                         >
                             {this.state.templatePreview ? "Template Preview" : "Choose Template"}
                         </p>
@@ -86,8 +88,8 @@ export default class ChooseTemplates extends React.Component {
                     </div>
 
                     <div
-                        class='scroll-div'
-                        id='scroll-div'
+                        className={styles.scroll_div}
+                        id={styles.scroll_div}
                         style={{
                             position: 'relative',
                             overflowY: 'scroll',

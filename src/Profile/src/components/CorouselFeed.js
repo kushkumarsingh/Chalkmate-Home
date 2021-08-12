@@ -1,5 +1,7 @@
 import React from 'react'
 
+import styles from '../Profile.module.css'
+
 const CorouselImages = ["Image/add.png", "Image/add.png", "Image/add.png"]
 
 
@@ -8,15 +10,15 @@ export default function CorouselFeed() {
 
 
     return (
-        <div className="slideshow" style={{ position: 'relative', borderRadius: 10, boxShadow: '0px 8px 16px 0px rgba(0,0,0,0.2)'}}>
+        <div className={styles.slideshow} style={{ position: 'relative', borderRadius: 10, boxShadow: '0px 8px 16px 0px rgba(0,0,0,0.2)'}}>
             <div
-                className="slideshowSlider"
+                className={styles.slideshowSlider}
                 style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
             >
                 {
                 CorouselImages.map((img, index) => (
                     <div
-                        className="slide"
+                        className={styles.slide}
                         key={index}
                         // style={{borderRadius: 10}}
                     >
@@ -34,11 +36,11 @@ export default function CorouselFeed() {
                 }}
             >
 
-                <div className="slideshowDots">
+                <div className={styles.slideshowDots}>
                     {CorouselImages.map((_, idx) => (
                         <div
                             key={idx}
-                            className={`slideshowDot${index === idx ? " active" : ""}`}
+                            className={`${styles.slideshowDot} ${index === idx ? styles.slideshowDot_active : " "}`}
                             onClick={() => { setIndex(idx) }} ></div>
                     ))}
                 </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from '../Profile.module.css'
 
 export default class CoverFeed extends React.Component {
 
@@ -72,7 +73,7 @@ export default class CoverFeed extends React.Component {
 
                             <input
                                 type="file"
-                                className="inputfield-cover"
+                                className={styles.inputfield_cover}
                                 id="iconimage-cover"
                                 onChange={this.handleImageChange}
                                 style={{ display: "none", cursor: 'pointer' }}

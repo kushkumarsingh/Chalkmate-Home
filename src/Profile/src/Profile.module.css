@@ -10,7 +10,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-textarea, input[type=text] {
+textarea, input[type=text], .textinp {
   font-family: 'Montserrat', sans_serif;
 }
 
@@ -105,7 +105,7 @@ input:focus, .textarea:focus, textarea:focus {
   background-color: #fff;
 }
 
-.slideshowDot .active {
+.slideshowDot_active {
   width: 20px
 }
 
