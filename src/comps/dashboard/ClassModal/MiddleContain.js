@@ -1,35 +1,38 @@
 import React from "react";
-import "./MiddleContain.css";
+import styles from "./MiddleContain.module.css";
+import { Link } from "react-router-dom";
 
 function MiddleContain() {
 
     return (
-        <div className="classModal">
+        <div className={styles.classModal}>
           <form>
-            <h3 className="inputLabel" for="classname">
+            <h3 className={styles.inputLabel} for="classname">
               Name your class
             </h3>
-            <input type="text" className="inputField" placeholder="Ex: Physics lecture"/>
-            <h3 for="description" className="inputLabel">
+            <input type="text" className={styles.inputField} placeholder="Ex: Physics lecture"/>
+            <h3 for="description" className={styles.inputLabel}>
               Description
             </h3>
-            <input type="text" className="inputField1" placeholder="Ex: Describe your class"/>
-            <h3 for="grade" className="inputLabel">
+            <input type="text" className={styles.inputField1} placeholder="Ex: Describe your class"/>
+            <h3 for="grade" className={styles.inputLabel}>
               Select grade
             </h3>
-            <div className="drop">
+            <div className={styles.drop}>
             {/* <img src = "./Image/dropArrow.svg"></img> */}
-            <input type="text" className="inputField" placeholder="Ex: A B C ect :"/>
+            <input type="text" className={styles.inputField} placeholder="Ex: A B C ect :"/>
             </div>
-            <h3 for="subject" className="inputLabel">
+            <h3 for="subject" className={styles.inputLabel}>
               Select subject
             </h3>
-            <div className="drop">
+            <div className={styles.drop}>
             {/* <img src = "./Image/dropArrow.svg"></img> */}
-            <input type="text" className="inputField" placeholder="Ex: Physics"/>
+            <input type="text" className={styles.inputField} placeholder="Ex: Physics"/>
             </div>
-            <button id="submitForm" className="saveDetailsButton">
-              CREATE CLASS
+            <button id="submitForm" className={styles.saveDetailsButton}>
+              <Link to="/class">
+              Save
+              </Link>
             </button>
           </form>
         </div>

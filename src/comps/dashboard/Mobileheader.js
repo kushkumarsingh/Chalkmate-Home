@@ -1,17 +1,17 @@
 import React from 'react';
 import { Component } from 'react';
-import "./Mobileheader.css";
+import styles from "./Mobileheader.module.css";
 
 class MobileHeader extends Component{
    
     render() {
         return (
-              <div className="mobileheader">
-                <img src="./Image/profile.png" className="mobileheader-image"/>
-              <div className="mobileheader-search">
+              <div className={styles.mobileheader}>
+                <img src="./Image/profile.png" className={styles.mobileheader_image}/>
+              <div className={styles.mobileheader_search}>
                 <img src="./Image/Chalkmate_Search.svg"/>
               <form>
-              <input className="mobileinput" type="text" placeholder="Search" />
+              <input className={styles.mobileinput} type="text" placeholder="Search" />
                </form>
                 </div>
                  <img src="./Image/nav_menu.jpeg"/>

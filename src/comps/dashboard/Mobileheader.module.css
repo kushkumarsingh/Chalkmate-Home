@@ -11,7 +11,7 @@
   z-index: 10;
 }
 
-.mobileheader-image{
+.mobileheader_image{
   top: 10px;
   left: 20px;
   width: 34px !important;
@@ -20,7 +20,7 @@
   opacity: 1 !important;
 }
 
-.mobileheader-search {
+.mobileheader_search {
   margin-top: 10px;
   display: flex;
   align-items: center;
@@ -32,7 +32,7 @@
   opacity: 1;
 }
 
-.mobileheader-search > form > input {
+.mobileheader_search > form > input {
   font: italic normal medium 10px/13px Montserrat;
   outline: none;
   border: none;
@@ -46,7 +46,7 @@
       .mobileheader{
        display:flex
       }
-      .header-dashboard{
+      .header{
       display:none
       }
     }
@@ -55,7 +55,7 @@
       .mobileheader{
        display:none !important
       }
-      .header-dashboard{
+      .header{
       display:flex
       }
     }

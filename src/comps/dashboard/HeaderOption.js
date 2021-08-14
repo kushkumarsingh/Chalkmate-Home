@@ -1,13 +1,13 @@
 import { Avatar } from "@material-ui/core";
 import React from "react";
-import "./HeaderOption.css";
+import styles from './HeaderOption.module.css';
 
 function HeaderOption({ avatar, Icon, title }) {
   return (
-    <div className="headerOption">
-      {Icon && <Icon className="headerOption-icon" />}
-      {avatar && <Avatar classname="headerOption-icon" src={avatar} />}
-      <h3 className="headerOption-title">{title}</h3>
+    <div className={styles.headerOption}>
+      {Icon && <Icon className={styles.headerOption_icon} />}
+      {avatar && <Avatar classname={styles.headerOption_icon} src={avatar} />}
+      <h3 className={styles.headerOption_title}>{title}</h3>
     </div>
   );
 }

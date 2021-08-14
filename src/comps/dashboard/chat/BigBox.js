@@ -47,11 +47,6 @@ export default class BigBox extends Component {
                 {this.state.showChat &&
                 <div className={styles.container}>
                     <div className={styles.middleContainer}>
-                        {/* M<br/>eM<br/>sM<br/>sM<br/>aM<br/>gM<br/>eM<br/> M<br/>BM<br/>oxM<br/>
-                        M<br/>eM<br/>sM<br/>sM<br/>aM<br/>gM<br/>eM<br/> M<br/>BM<br/>oxM<br/>
-                        M<br/>eM<br/>sM<br/>sM<br/>aM<br/>gM<br/>eM<br/> M<br/>BM<br/>oxM<br/>
-                        M<br/>eM<br/>sM<br/>sM<br/>aM<br/>gM<br/>eM<br/> M<br/>BM<br/>oxM<br/>
-                        M<br/>eM<br/>sM<br/>sM<br/>aM<br/>gM<br/>eM<br/> M<br/>BM<br/>oxM<br/> */}
                         <MyMessage message="Hello"/>
                         <YourMessage message="Heyy"/>
                         <MyMessage message="How You Doin'?"/>
@@ -68,11 +63,6 @@ export default class BigBox extends Component {
                         <p className={styles.unreadText}><span className={styles.unreadSpan}>2 unread messages</span></p>
                         <YourMessage message="kahsvbckjasbckjbas"/>
                         <YourMessage message="jasbvckjasbvckjavbskcjvaskjchvaskhcvaskjhcvjasvhcjavshc"/>
-                        {/* <Message name="Ananya Chandra" date="20 Nov 2021" profilePicture={ProfilePicture} message="Thanks"/>
-                        <Message name="Ananya Chandra" date="20 Nov 2021" profilePicture={ProfilePicture} message="Thanks"/>
-                        <Message name="Ananya Chandra" date="20 Nov 2021" profilePicture={ProfilePicture} message="Thanks"/>
-                        <Message name="Ananya Chandra" date="20 Nov 2021" profilePicture={ProfilePicture} message="Thanks"/>
-                        <Message name="Ananya Chandra" date="20 Nov 2021" profilePicture={ProfilePicture} message="Thanks"/> */}
                         <div style={{ height:"4px", float:"left", clear: "both" }}
                             ref={(el) => { this.messagesEnd = el; }}>
                         </div>

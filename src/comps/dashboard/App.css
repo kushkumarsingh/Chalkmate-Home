@@ -1,32 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-* {
-  margin: 0;
-  font-family: "Montserrat", sans-serif;
-}
-
-body {
-  font-size: small;
-}
-
 .app-body {
   display: flex;
-  background-color: #ffffff;
-  font-family: Montserrat Family;
+  background-color: #FFFFFF;
 }
 
-@media (max-width: 500px) {
-  .header-dashboard {
+a{
+  text-decoration: none !important;
+}
+
+@media (max-width:500px){
+  .header{
     display: none !important;
   }
-  .col-xs-0,
-  .col-sm-0,
-  .col-md-0,
-  .col-lg-0 {
-    flex: 0 0 0;
-    max-width: 0;
-    padding-right: 0;
-    padding-left: 0;
-    display: none;
-  }
+.col-xs-0, 
+.col-sm-0,
+.col-md-0,
+.col-lg-0 {
+  flex: 0 0 0;
+  max-width: 0;
+  padding-right: 0;
+  padding-left: 0;
+  display: none;
+}
 }

@@ -8,17 +8,14 @@ export default class Chat extends Component {
         openChats: []
     }
     chatOpener = (person) => {
-        if(!this.state.openChats.includes(person)){
-            // alert("Daaldo");
-            this.setState({openChats: [...this.state.openChats, person]})
-        }
-        else{
-            let array = [...this.state.openChats]
-            var filtered = array.filter(function(value, index, arr){ 
+        var filtered = [...this.state.openChats];
+        if(this.state.openChats.includes(person)){
+            let array = filtered;
+            filtered = array.filter(function(value, index, arr){ 
                 return value !== person;
             });
-            this.setState({openChats:[...filtered, person]})
         }
+        this.setState({openChats:[...filtered, person]})
     } 
 
     showChats = ()=>{

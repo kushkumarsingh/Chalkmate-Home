@@ -472,6 +472,7 @@ input:focus, .textarea:focus, textarea:focus {
 
 .feed {
   margin-top: 100px;
+  padding: 0px 110px
 }
 
 .header_nav {

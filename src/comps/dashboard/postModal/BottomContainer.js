@@ -1,19 +1,21 @@
 import React, { Component } from 'react'
 import styles from './css/BottomContainer.module.css'
-import Photos from './images/photos.svg'
+import Photo from './images/photo.svg'
 import Briefcase from './images/briefcase.svg'
 import Video from './images/video.svg'
 import Doc from './images/document.svg'
 import DropBox from './DropBox'
 
 export default class BottomContainer extends Component {
+
+    
     render() {
         return (
             <div className={styles.container}>
                 <div className={styles.innerBox}>
                     <div style={{position:'relative'}}>
                         <input onChange = {this.props.fileInput} type="file" accept="image/*" className={styles.fileUpload} />
-                        <img src={Photos} alt="Photos" className={styles.photo}/>
+                        <img src={Photo} alt="Photos" className={styles.photo}/>
                     </div>
                     <div style={{position:'relative'}}>
                         <input onChange = {this.props.videoInput} type="file" accept="video/mp4,video/x-m4v,video/*" className={styles.fileUpload} />

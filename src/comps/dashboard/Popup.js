@@ -1,19 +1,19 @@
 import React from "react";
-import "./Popup.css";
+import styles from "./Popup.module.css";
 import AddIcon from "@material-ui/icons/Add";
 import CloseIcon from "@material-ui/icons/Close";
 
 function Popup() {
   return (
-    <div className="popup">
-      <div className="popup-header">
+    <div className={styles.popup}>
+      <div className={styles.popup_header}>
         <AddIcon />
         <h3>Create a post</h3>
         <CloseIcon />
       </div>
-      <div className="popup-profile"></div>
-      <div className="popup-input"></div>
-      <div className="popup-option"></div>
+      <div className={styles.popup_profile}></div>
+      <div className={styles.popup_input}></div>
+      <div className={styles.popup_option}></div>
     </div>
   );
 }

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28.018" height="28.018" viewBox="0 0 28.018 28.018">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_197" data-name="Rectangle 197" width="20" height="20" transform="translate(-0.288)" fill="#b2b2b2" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Group_2094" data-name="Group 2094" transform="translate(1129 5149)">
+    <rect id="Rectangle_313" data-name="Rectangle 313" width="28.018" height="28.018" transform="translate(-1129 -5149)" fill="#b2b2b2" opacity="0"/>
+    <g id="Mask_Group_11" data-name="Mask Group 11" transform="translate(-1124.712 -5145)" clip-path="url(#clip-path)">
+      <g id="Chalkmate_Addphoto" transform="translate(0 0.831)">
+        <path id="Path_212" data-name="Path 212" d="M5.21,15.434a3.118,3.118,0,0,1-2.951-2.125l-.027-.094a3.032,3.032,0,0,1-.145-.9V6.627L.063,13.375a1.9,1.9,0,0,0,1.327,2.3l12.89,3.452a1.873,1.873,0,0,0,2.282-1.3l.752-2.388H5.21Z" transform="translate(-0.002 -0.849)" fill="#b2b2b2"/>
+        <path id="Path_213" data-name="Path 213" d="M7.5,6.682A1.667,1.667,0,1,0,5.832,5.014,1.669,1.669,0,0,0,7.5,6.682Z" transform="translate(-0.002 -0.849)" fill="#b2b2b2"/>
+        <path id="Path_214" data-name="Path 214" d="M17.92.849H5.417A2.087,2.087,0,0,0,3.335,2.932V12.1a2.087,2.087,0,0,0,2.082,2.082h12.5A2.087,2.087,0,0,0,20,12.1V2.932A2.084,2.084,0,0,0,17.92.849ZM5.417,2.517h12.5a.415.415,0,0,1,.415.415V8.85L15.7,5.777a1.5,1.5,0,0,0-1.119-.513,1.464,1.464,0,0,0-1.112.525L10.373,9.5,9.363,8.5A1.46,1.46,0,0,0,7.3,8.5l-2.3,2.3V2.932A.424.424,0,0,1,5.417,2.517Z" transform="translate(-0.002 -0.849)" fill="#b2b2b2"/>
+      </g>
+    </g>
+  </g>
+</svg>

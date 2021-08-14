@@ -1,6 +1,6 @@
 import { Avatar } from "@material-ui/core";
 import React, { useState } from "react";
-import "./MessageSender.css";
+import styles from './MessageSender.module.css';
 import InputOptionFromSource from "./InputOptionFromSource";
 import AddPhotoAlternateIcon from "./images/Chalkmate_Addphoto.svg";
 // import LibraryAddIcon from "./images/Chalkmate_Addfromlibrary.svg";
@@ -29,9 +29,9 @@ function MessageSender() {
     toggleModal(false);
   }
   return (
-    <div className="MessageSender">
-      <div className="messageSender-top">
-        <div className="message-input">
+    <div className={styles.MessageSender}>
+      <div className={styles.messageSender_top}>
+        <div className={styles.message_input}>
           <PostModal showModal = {showModal} closeModal={closeModal}/>
           <img src = "./Image/profile1.png" style={{width:50,height:50}}/>
           <form onClick={OpenModal}>
@@ -40,7 +40,7 @@ function MessageSender() {
               // onChange={e => setInput(e.target.value)}
               // onClick={<Popup />}
               disabled
-              className="input"
+              className={styles.input}
               placeholder="Share your thoughts..."
             />
             {/* <button
@@ -52,12 +52,12 @@ function MessageSender() {
             </button> */}
           </form>
         </div>
-        <hr className="messageSenderDivider"/>
-        <div className="messageSender-bottom">
-          <div className="messageSender-leftDiv">
+        <hr className={styles.messageSenderDivider}/>
+        <div className={styles.messageSender_bottom}>
+          <div className={styles.messageSender_leftDiv}>
             <InputOptionFromSource Icon={VisibilityIcon} title="Anyone"/>
           </div>
-          <div onClick ={OpenModal} className="messageSender-rightDiv">
+          <div onClick ={OpenModal} className={styles.messageSender_rightDiv}>
               <InputOptionFromSource
                 Icon={AddPhotoAlternateIcon}
                 title="Photo"

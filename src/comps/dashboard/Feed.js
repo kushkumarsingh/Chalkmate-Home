@@ -1,5 +1,5 @@
 import { React, Component } from "react";
-import "./Feed.css";
+import styles from './Feed.module.css';
 import MessageSender from "./MessageSender";
 import Post from "./Post";
 import PostSampleImg from './images/postSampleImg.png';
@@ -13,7 +13,7 @@ export default class Feed extends Component {
   render() {
     return (
 
-      <div className="feed">
+      <div className={styles.feed}>
         <MessageSender />
 
         {/* {posts.map(post => (

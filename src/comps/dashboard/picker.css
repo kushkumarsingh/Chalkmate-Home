@@ -1,0 +1,6 @@
+aside.emoji-picker-react {
+    position: absolute !important;
+    z-index: 10;
+    right: 0;
+    top: 41px;
+}

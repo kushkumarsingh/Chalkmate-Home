@@ -1,4 +1,4 @@
- .header-dashboard {
+ .header {
   position: sticky;
   display: flex;
   background-color: white;
@@ -20,13 +20,13 @@
   padding-bottom: 22px;
 }
 
-.header-left {
+.header_left {
   display: flex;
   /* margin-top: 20px; */
   margin-left: -42px;
 } 
 
- .header-left > img {
+ .header_left > img {
   object-fit: contain;
   top: 21px;
   left: 270px;
@@ -37,7 +37,7 @@
   margin-top: 5px;
 }  
 
-.header-search {
+.header_search {
   margin-top: 5px;
   padding-left: 10px; 
   display: flex;
@@ -51,7 +51,7 @@
   margin-left: 25px;
 }
 
-.header-search > form > input {
+.header_search > form > input {
   font: italic normal medium 13px/16px Montserrat;
   outline: none;
   border: none;
@@ -63,7 +63,7 @@
 }
 
 
-.header-right {
+.header_right {
   top:20px;
   display: flex;
   width: 515;
@@ -73,7 +73,7 @@
   gap: 30px;
 }
 
-.header-option {
+.header_option {
   /* margin-left: 30px; */
   text-align: center;
   display: grid;
@@ -89,7 +89,7 @@ opacity: 0.3;
 cursor: pointer;
 }
 
-.header-avatar {
+.header_avatar {
   /* margin-top: -14px; */
   width: 50px !important;
   height: 50px !important;
@@ -118,19 +118,19 @@ cursor: pointer;
   color: #B4B4B4;
 }
 
-.profile-icon {
-  margin-left: 20px;
+.profile_icon {
+  /* margin-left: 20px; */
   text-align: center;
   /* margin-top: 25px; */
   display: flex;
 }
 
-.header-options-container{
+.header_options_container{
   display: grid;
   place-items: center;
 }
 
-.profile-icon img{
+.profile_icon img{
   width: 20px;
   height: 20px;
   background: transparent 0% 0% no-repeat padding-box;
@@ -138,7 +138,7 @@ cursor: pointer;
   margin: auto 0 auto 0;
 }
 
-.header-search img {
+.header_search img {
   height: 18px;
   width: 19px;
   background:transparent 0% 0% no-repeat padding-box;
@@ -194,11 +194,11 @@ margin-left: -63px;
 .navbar_menu{
   width: 80px;
 }
-@media (max-width:500px){ 
+@media (max-width:1099px){ 
   .mobileheader{
    display:flex
   }
-  .header-dashboard{
+  .header{
   display: none 
   }
 }
@@ -207,7 +207,7 @@ margin-left: -63px;
   .mobileheader {
    display: none !important;
   }
-  .header-dashboard{
+  .header{
   display:flex
   }
 }

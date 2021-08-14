@@ -5,7 +5,7 @@
   border-radius: 10px;
 }
 
-.messageSender-top {
+.messageSender_top {
   background-color: white;
   padding: 10px 0 0 0;
   /* padding-bottom: 10px; */
@@ -24,7 +24,7 @@
 
 }
 
-.message-input {
+.message_input {
   /* border: 1px solid lightgray; */
   border-radius: 30px;
   display: flex;
@@ -36,12 +36,12 @@
 
 }
 
-.message-input > form {
+.message_input > form {
   display: flex;
   width: 100%;
 }
 
-.message-input > form > input {
+.message_input > form > input {
   font: normal normal normal 14px/16px Montserrat;
   letter-spacing: 0px;
   color: #555555;
@@ -69,7 +69,7 @@
   color: blue;
 } */
 
-.messageSender-bottom {
+.messageSender_bottom {
   display: flex;
   padding-left: 24px;
   padding-right: 24px;
@@ -78,7 +78,7 @@
   padding-top: 10px;
 }
 
-.messageSender-rightDiv{
+.messageSender_rightDiv{
   order: 2;
   margin-left: auto;
   display: flex;

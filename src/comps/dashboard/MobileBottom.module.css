@@ -18,13 +18,13 @@
     gap: 20px;
 }
 
-.bottom-container {
+.bottom_container {
     text-align: center;
     display: grid;
     place-items: center;
 }
 
-.image-name {
+.image_name {
 text-align: center;
 font: normal normal normal 9px/11px Montserrat;
 letter-spacing: 0px;
@@ -32,7 +32,7 @@ color: #B4B4B4;
 opacity: 1;
 }
 
-.mobile-image {
+.mobile_image {
     background: transparent 0% 0% no-repeat padding-box;
     opacity: 0.3;
     cursor: pointer;

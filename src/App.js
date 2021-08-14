@@ -43,7 +43,7 @@ export default class App extends React.Component {
       editpage: false,
     };
 
-    this.Home = this.Home.bind(this);
+    // this.Home = this.Home.bind(this);
     this.Profile = this.Profile.bind(this);
 
   }
@@ -86,14 +86,14 @@ export default class App extends React.Component {
 
 
 
-  Home() {
-    return (
-      <div className="App">
-        <Nav />
-        <Hero />
-      </div>
-    );
-  }
+  // Home() {
+  //   return (
+  //     <div className="App">
+  //       <Nav />
+  //       <Hero />
+  //     </div>
+  //   );
+  // }
 
 
   render() {
@@ -109,6 +109,9 @@ export default class App extends React.Component {
           </Route>
 
 
+          <Route exact path="/user">
+            <Dashboard />
+          </Route>
 
           <Route exact path={this.state.editpage ? '/edit' : '/view'} children={<this.Profile />} />
           <Route path="/templates" children={<this.Profile />} />
@@ -122,9 +125,6 @@ export default class App extends React.Component {
 
           <Route exact path="/:id/meeting">
             <CallPage />
-          </Route>
-          <Route exact path="/user">
-            <Dashboard />
           </Route>
           <Route exact path="/:id">
             <MeetingPage />
