@@ -205,7 +205,7 @@ export default class Template2 extends React.Component {
                                         paddingLeft: 10
                                     }}
                                 >
-                                    <p style={{ fontSize: 25, textTransform: 'uppercase', fontWeight: 600, color: '#0c1b7a', marginBottom: 15 }}>personal details</p>
+                                    <p style={{ fontSize: 25, textTransform: 'uppercase', fontWeight: 600, color: '#0c1b7a', marginBottom: 15 }}>languages</p>
                                     {/* <div
                                         style={{
                                             borderLeft: '5px solid #dcdcdc',

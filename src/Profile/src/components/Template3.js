@@ -98,6 +98,24 @@ export default class Template3 extends React.Component {
                     id="topviewable"
                     style={{}}
                 >
+
+                    <div
+                        style={{position: 'relative'}}
+                    >
+                        <img
+                            style={{
+                                opacity: 0.1,
+                                position: 'absolute',
+                                top: '50%',
+                                marginLeft: '-29em',
+                                left: '50%',
+                                marginTop: '30em',
+                                height: '60em',
+                                width: '56em'
+                            }}
+                            src="../assets/Chalkmate_Watermark.png"
+                        />
+                    </div>
                     <AspectRatio ratio="3/4" style={{ width: "82em", userSelect: 'none', }}>
                         <div
                             style={{

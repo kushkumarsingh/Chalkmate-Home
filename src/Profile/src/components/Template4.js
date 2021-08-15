@@ -253,13 +253,13 @@ export default class Template4 extends React.Component {
                                 <div
                                     style={{ flex: 1 }}
                                 >
-                                    <RightTitleDescComponentTemp4 title='My Experience' />
+                                    <RightTitleDescComponentTemp4 title='Experience' />
                                     <ExpTimelineVerticalTemp4 data={desc.educationWork} />
                                 </div>
                                 <div
                                     style={{ marginTop: 70, flex: 1 }}
                                 >
-                                    <RightTitleDescComponentTemp4 title='Specializing' />
+                                    <RightTitleDescComponentTemp4 title='Skills' />
                                     {
                                         desc.languages.slice(0, 4).map((lval) => {
                                             return (
@@ -273,7 +273,7 @@ export default class Template4 extends React.Component {
                                 <div
                                     style={{ marginTop: 70, flex: 1 }}
                                 >
-                                    <RightTitleDescComponentTemp4 title='My Education' />
+                                    <RightTitleDescComponentTemp4 title='Education' />
                                     <ExpTimelineVerticalTemp4 data={desc.educationWork} />
                                 </div>
                                 <div

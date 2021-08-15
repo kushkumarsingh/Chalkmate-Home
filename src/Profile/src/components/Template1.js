@@ -184,7 +184,7 @@ export default class Template1 extends React.Component {
 
                             <div style={{ margin: '30px 0px 0px 0px' }}>
                                 <div style={{ marginLeft: 10 }}>
-                                    <TitleIconDescComp title="Work History" desc="" titleSize={16} descSize={13} titleColor="#000" descColor="#555555" src="../assets/education.png" />
+                                    <TitleIconDescComp title="Experience" desc="" titleSize={16} descSize={13} titleColor="#000" descColor="#555555" src="../assets/education.png" />
                                 </div>
                                 <div style={{ flex: 1, boxShadow: '0px 0px 10px #5555551A', padding: "30px 0px 40px 30px", borderRadius: 10, marginTop: 15 }}>
                                     <TimeTitleDescComp data={desc.educationWork} />
