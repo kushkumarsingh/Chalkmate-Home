@@ -86,14 +86,14 @@ export default class App extends React.Component {
 
 
 
-  // Home() {
-  //   return (
-  //     <div className="App">
-  //       <Nav />
-  //       <Hero />
-  //     </div>
-  //   );
-  // }
+  Home() {
+    return (
+      <div className="App">
+        <Nav />
+        <Hero />
+      </div>
+    );
+  }
 
 
   render() {

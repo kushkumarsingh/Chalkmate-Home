@@ -290,51 +290,51 @@ export default class Template4 extends React.Component {
                         </div>
 
                     </div>
+                </AspectRatio>
                     <br />
                     <br />
                     <br />
-                    <div style={{ margin: 100, display: 'flex', justifyContent: 'space-around' }}>
-                        <div
-                            onClick={() => {
-                                document.body.style.maxWidth = '100em'
-                                const input = document.getElementById('topviewable')
 
-                                html2canvas(input, {
-                                    y: 0
-                                }).then((canvas) => {
-                                    const imgData = canvas.toDataURL('image/png');
-                                    const pdf = new jsPDF('p', 'px', 'a4', true,);
-                                    var width = pdf.internal.pageSize.getWidth();
-                                    var height = pdf.internal.pageSize.getHeight();
+                    <div style={{ margin: '30px 0px 100px 0px', display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
 
-                                    pdf.addImage(imgData, 'JPEG', 0, 0, width, height);
-                                    pdf.save("resume.pdf")
-                                    // window.open(pdf.output('datauristring'))
-                                    document.body.style.maxWidth = '100%'
+                    <div
+                        onClick={() => {
+                            document.body.style.maxWidth = '100em'
+                            const input = document.getElementById('topviewable')
 
+                            html2canvas(input, {
+                                y: 0
+                            }).then((canvas) => {
+                                const imgData = canvas.toDataURL('image/png');
+                                const pdf = new jsPDF('p', 'px', 'a4', true,);
+                                var width = pdf.internal.pageSize.getWidth();
+                                var height = pdf.internal.pageSize.getHeight();
 
-                                });
-
-                            }}
+                                pdf.addImage(imgData, 'JPEG', 0, 0, width, height);
+                                pdf.save("resume.pdf")
+                                // window.open(pdf.output('datauristring'))
+                                document.body.style.maxWidth = '100%'
 
 
-                        >
-                            <div id="btn-ftr" style={styles.footerbtn}>
-                                <p style={styles.btntitle}>PRINT THIS RESUME</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div id="btn-ftr" style={styles.footerbtn}>
-                                <p style={styles.btntitle}>SHARE THIS RESUME</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div id="btn-ftr" style={styles.footerbtn}>
-                                <p style={styles.btntitle}>VIEW DETAILED RESUME</p>
-                            </div>
+                            });
+
+                        }}
+                    >
+                        <div id="btn-ftr" style={styles.footerbtn}>
+                            <p style={styles.btntitle}>PRINT THIS RESUME</p>
                         </div>
                     </div>
-                </AspectRatio>
+                    <div>
+                        <div id="btn-ftr" style={styles.footerbtn}>
+                            <p style={styles.btntitle}>SHARE THIS RESUME</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="btn-ftr" style={styles.footerbtn}>
+                            <p style={styles.btntitle}>VIEW DETAILED RESUME</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         )
@@ -409,6 +409,10 @@ const styles = {
     footerbtn: {
         borderRadius: 30,
         border: '2px solid #297CED',
+        margin: '10px 60px',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
     },
 
     btntitle: {
